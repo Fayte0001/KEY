@@ -1,0 +1,3987 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = {
+	ScreenGui = Instance.new("ScreenGui"),
+	Frame = Instance.new("Frame"),
+	MainFrame = Instance.new("ImageLabel"),
+	Title = Instance.new("TextLabel"),
+	gamename = Instance.new("TextLabel"),
+	Sidebar = Instance.new("ImageLabel"),
+	back = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	set = Instance.new("TextButton"),
+	homebt = Instance.new("ImageButton"),
+	UIGradient = Instance.new("UIGradient"),
+	UIGradient_2 = Instance.new("UIGradient"),
+	fam = Instance.new("TextButton"),
+	homebt_2 = Instance.new("ImageButton"),
+	UIGradient_3 = Instance.new("UIGradient"),
+	UIGradient_4 = Instance.new("UIGradient"),
+	pla = Instance.new("TextButton"),
+	homebt_3 = Instance.new("ImageButton"),
+	UIGradient_5 = Instance.new("UIGradient"),
+	UIGradient_6 = Instance.new("UIGradient"),
+	home = Instance.new("TextButton"),
+	homebt_4 = Instance.new("ImageButton"),
+	UIGradient_7 = Instance.new("UIGradient"),
+	UIGradient_8 = Instance.new("UIGradient"),
+	TextButton = Instance.new("TextButton"),
+	Homeframe = Instance.new("ImageLabel"),
+	TextLabel = Instance.new("TextLabel"),
+	UIGradient_9 = Instance.new("UIGradient"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	UIGradient_10 = Instance.new("UIGradient"),
+	PLAYERFRAME = Instance.new("ImageLabel"),
+	Diffuse = Instance.new("Frame"),
+	Text = Instance.new("TextLabel"),
+	UIGradient_11 = Instance.new("UIGradient"),
+	WhiteBar = Instance.new("Frame"),
+	Slider = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	SliderCircle = Instance.new("Frame"),
+	UICorner_3 = Instance.new("UICorner"),
+	Button = Instance.new("TextButton"),
+	OnOrOff = Instance.new("TextLabel"),
+	UIGradient_12 = Instance.new("UIGradient"),
+	UICorner_4 = Instance.new("UICorner"),
+	SettingsFrame = Instance.new("ImageLabel"),
+	Autofarmframe = Instance.new("Frame"),
+	Autofarmfr1ame = Instance.new("ImageLabel"),
+	Diffuse_2 = Instance.new("Frame"),
+	Text_2 = Instance.new("TextLabel"),
+	UIGradient_13 = Instance.new("UIGradient"),
+	WhiteBar_2 = Instance.new("Frame"),
+	Slider_2 = Instance.new("Frame"),
+	UICorner_5 = Instance.new("UICorner"),
+	SliderCircle_2 = Instance.new("Frame"),
+	UICorner_6 = Instance.new("UICorner"),
+	Button_2 = Instance.new("TextButton"),
+	OnOrOff_2 = Instance.new("TextLabel"),
+	UIGradient_14 = Instance.new("UIGradient"),
+	UICorner_7 = Instance.new("UICorner"),
+	Diffuse_3 = Instance.new("Frame"),
+	Text_3 = Instance.new("TextLabel"),
+	UIGradient_15 = Instance.new("UIGradient"),
+	UICorner_8 = Instance.new("UICorner"),
+	TextButton_2 = Instance.new("TextButton"),
+	UICorner_9 = Instance.new("UICorner"),
+	UIGradient_16 = Instance.new("UIGradient"),
+	TextButton_3 = Instance.new("TextButton"),
+	MAMA = Instance.new("ImageLabel"),
+	Frame_2 = Instance.new("ImageLabel"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UIGradient_17 = Instance.new("UIGradient"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	Diffuse_4 = Instance.new("Frame"),
+	Text_4 = Instance.new("TextLabel"),
+	UIGradient_18 = Instance.new("UIGradient"),
+	WhiteBar_3 = Instance.new("Frame"),
+	Slider_3 = Instance.new("Frame"),
+	UICorner_10 = Instance.new("UICorner"),
+	SliderCircle_3 = Instance.new("Frame"),
+	UICorner_11 = Instance.new("UICorner"),
+	Button_3 = Instance.new("TextButton"),
+	OnOrOff_3 = Instance.new("TextLabel"),
+	UIGradient_19 = Instance.new("UIGradient"),
+	UICorner_12 = Instance.new("UICorner"),
+	Frame_3 = Instance.new("ImageLabel"),
+	Frame_4 = Instance.new("ImageLabel"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	UIGradient_20 = Instance.new("UIGradient"),
+	ScrollingFrame_2 = Instance.new("ScrollingFrame"),
+	UIListLayout = Instance.new("UIListLayout"),
+	Diffuse_5 = Instance.new("Frame"),
+	Text_5 = Instance.new("TextLabel"),
+	UIGradient_21 = Instance.new("UIGradient"),
+	WhiteBar_4 = Instance.new("Frame"),
+	Slider_4 = Instance.new("Frame"),
+	UICorner_13 = Instance.new("UICorner"),
+	SliderCircle_4 = Instance.new("Frame"),
+	UICorner_14 = Instance.new("UICorner"),
+	Button_4 = Instance.new("TextButton"),
+	OnOrOff_4 = Instance.new("TextLabel"),
+	UIGradient_22 = Instance.new("UIGradient"),
+	UICorner_15 = Instance.new("UICorner"),
+	Frame_5 = Instance.new("ImageLabel"),
+	Frame_6 = Instance.new("ImageLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	UIGradient_23 = Instance.new("UIGradient"),
+	ScrollingFrame_3 = Instance.new("ScrollingFrame"),
+	Diffuse_6 = Instance.new("Frame"),
+	Text_6 = Instance.new("TextLabel"),
+	UIGradient_24 = Instance.new("UIGradient"),
+	WhiteBar_5 = Instance.new("Frame"),
+	Slider_5 = Instance.new("Frame"),
+	UICorner_16 = Instance.new("UICorner"),
+	SliderCircle_5 = Instance.new("Frame"),
+	UICorner_17 = Instance.new("UICorner"),
+	Button_5 = Instance.new("TextButton"),
+	OnOrOff_5 = Instance.new("TextLabel"),
+	UIGradient_25 = Instance.new("UIGradient"),
+	UICorner_18 = Instance.new("UICorner"),
+	Frame_7 = Instance.new("ImageLabel"),
+	Frame_8 = Instance.new("ImageLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	UIGradient_26 = Instance.new("UIGradient"),
+	ScrollingFrame_4 = Instance.new("ScrollingFrame"),
+	Diffuse_7 = Instance.new("Frame"),
+	Text_7 = Instance.new("TextLabel"),
+	UIGradient_27 = Instance.new("UIGradient"),
+	WhiteBar_6 = Instance.new("Frame"),
+	Slider_6 = Instance.new("Frame"),
+	UICorner_19 = Instance.new("UICorner"),
+	SliderCircle_6 = Instance.new("Frame"),
+	UICorner_20 = Instance.new("UICorner"),
+	Button_6 = Instance.new("TextButton"),
+	OnOrOff_6 = Instance.new("TextLabel"),
+	UIGradient_28 = Instance.new("UIGradient"),
+	UICorner_21 = Instance.new("UICorner"),
+	Frame_9 = Instance.new("ImageLabel"),
+	Frame_10 = Instance.new("ImageLabel"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	UIGradient_29 = Instance.new("UIGradient"),
+	ScrollingFrame_5 = Instance.new("ScrollingFrame"),
+	Diffuse_8 = Instance.new("Frame"),
+	Text_8 = Instance.new("TextLabel"),
+	UIGradient_30 = Instance.new("UIGradient"),
+	WhiteBar_7 = Instance.new("Frame"),
+	Slider_7 = Instance.new("Frame"),
+	UICorner_22 = Instance.new("UICorner"),
+	SliderCircle_7 = Instance.new("Frame"),
+	UICorner_23 = Instance.new("UICorner"),
+	Button_7 = Instance.new("TextButton"),
+	OnOrOff_7 = Instance.new("TextLabel"),
+	UIGradient_31 = Instance.new("UIGradient"),
+	UICorner_24 = Instance.new("UICorner"),
+	Frame_11 = Instance.new("ImageLabel"),
+	Frame_12 = Instance.new("ImageLabel"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	UIGradient_32 = Instance.new("UIGradient"),
+	ScrollingFrame_6 = Instance.new("ScrollingFrame"),
+	Diffuse_9 = Instance.new("Frame"),
+	Text_9 = Instance.new("TextLabel"),
+	UIGradient_33 = Instance.new("UIGradient"),
+	WhiteBar_8 = Instance.new("Frame"),
+	Slider_8 = Instance.new("Frame"),
+	UICorner_25 = Instance.new("UICorner"),
+	SliderCircle_8 = Instance.new("Frame"),
+	UICorner_26 = Instance.new("UICorner"),
+	Button_8 = Instance.new("TextButton"),
+	OnOrOff_8 = Instance.new("TextLabel"),
+	UIGradient_34 = Instance.new("UIGradient"),
+	UICorner_27 = Instance.new("UICorner"),
+	Frame_13 = Instance.new("ImageLabel"),
+	Frame_14 = Instance.new("ImageLabel"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	UIGradient_35 = Instance.new("UIGradient"),
+	ScrollingFrame_7 = Instance.new("ScrollingFrame"),
+	Diffuse_10 = Instance.new("Frame"),
+	Text_10 = Instance.new("TextLabel"),
+	UIGradient_36 = Instance.new("UIGradient"),
+	WhiteBar_9 = Instance.new("Frame"),
+	Slider_9 = Instance.new("Frame"),
+	UICorner_28 = Instance.new("UICorner"),
+	SliderCircle_9 = Instance.new("Frame"),
+	UICorner_29 = Instance.new("UICorner"),
+	Button_9 = Instance.new("TextButton"),
+	OnOrOff_9 = Instance.new("TextLabel"),
+	UIGradient_37 = Instance.new("UIGradient"),
+	UICorner_30 = Instance.new("UICorner"),
+	Frame_15 = Instance.new("ImageLabel"),
+	Frame_16 = Instance.new("ImageLabel"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	UIGradient_38 = Instance.new("UIGradient"),
+	ScrollingFrame_8 = Instance.new("ScrollingFrame"),
+	Diffuse_11 = Instance.new("Frame"),
+	Text_11 = Instance.new("TextLabel"),
+	UIGradient_39 = Instance.new("UIGradient"),
+	WhiteBar_10 = Instance.new("Frame"),
+	Slider_10 = Instance.new("Frame"),
+	UICorner_31 = Instance.new("UICorner"),
+	SliderCircle_10 = Instance.new("Frame"),
+	UICorner_32 = Instance.new("UICorner"),
+	Button_10 = Instance.new("TextButton"),
+	OnOrOff_10 = Instance.new("TextLabel"),
+	UIGradient_40 = Instance.new("UIGradient"),
+	UICorner_33 = Instance.new("UICorner"),
+	Frame_17 = Instance.new("ImageLabel"),
+	Frame_18 = Instance.new("ImageLabel"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	UIGradient_41 = Instance.new("UIGradient"),
+	ScrollingFrame_9 = Instance.new("ScrollingFrame"),
+	Diffuse_12 = Instance.new("Frame"),
+	Text_12 = Instance.new("TextLabel"),
+	UIGradient_42 = Instance.new("UIGradient"),
+	UICorner_34 = Instance.new("UICorner"),
+	TextButton_4 = Instance.new("TextButton"),
+	UICorner_35 = Instance.new("UICorner"),
+	UIGradient_43 = Instance.new("UIGradient"),
+	TextButton_5 = Instance.new("TextButton"),
+	GOGO = Instance.new("ImageLabel"),
+	Frame_19 = Instance.new("ImageLabel"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	UIGradient_44 = Instance.new("UIGradient"),
+	ScrollingFrame_10 = Instance.new("ScrollingFrame"),
+	Diffuse_13 = Instance.new("Frame"),
+	Text_13 = Instance.new("TextLabel"),
+	UIGradient_45 = Instance.new("UIGradient"),
+	WhiteBar_11 = Instance.new("Frame"),
+	Slider_11 = Instance.new("Frame"),
+	UICorner_36 = Instance.new("UICorner"),
+	SliderCircle_11 = Instance.new("Frame"),
+	UICorner_37 = Instance.new("UICorner"),
+	Button_11 = Instance.new("TextButton"),
+	OnOrOff_11 = Instance.new("TextLabel"),
+	UIGradient_46 = Instance.new("UIGradient"),
+	UICorner_38 = Instance.new("UICorner"),
+	Frame_20 = Instance.new("ImageLabel"),
+	Frame_21 = Instance.new("ImageLabel"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	UIGradient_47 = Instance.new("UIGradient"),
+	ScrollingFrame_11 = Instance.new("ScrollingFrame"),
+	UIListLayout_2 = Instance.new("UIListLayout"),
+	Diffuse_14 = Instance.new("Frame"),
+	Text_14 = Instance.new("TextLabel"),
+	UIGradient_48 = Instance.new("UIGradient"),
+	WhiteBar_12 = Instance.new("Frame"),
+	Slider_12 = Instance.new("Frame"),
+	UICorner_39 = Instance.new("UICorner"),
+	SliderCircle_12 = Instance.new("Frame"),
+	UICorner_40 = Instance.new("UICorner"),
+	Button_12 = Instance.new("TextButton"),
+	OnOrOff_12 = Instance.new("TextLabel"),
+	UIGradient_49 = Instance.new("UIGradient"),
+	UICorner_41 = Instance.new("UICorner"),
+	Frame_22 = Instance.new("ImageLabel"),
+	Frame_23 = Instance.new("ImageLabel"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	UIGradient_50 = Instance.new("UIGradient"),
+	ScrollingFrame_12 = Instance.new("ScrollingFrame"),
+	Diffuse_15 = Instance.new("Frame"),
+	Text_15 = Instance.new("TextLabel"),
+	UIGradient_51 = Instance.new("UIGradient"),
+	WhiteBar_13 = Instance.new("Frame"),
+	Slider_13 = Instance.new("Frame"),
+	UICorner_42 = Instance.new("UICorner"),
+	SliderCircle_13 = Instance.new("Frame"),
+	UICorner_43 = Instance.new("UICorner"),
+	Button_13 = Instance.new("TextButton"),
+	OnOrOff_13 = Instance.new("TextLabel"),
+	UIGradient_52 = Instance.new("UIGradient"),
+	UICorner_44 = Instance.new("UICorner"),
+	Frame_24 = Instance.new("ImageLabel"),
+	Frame_25 = Instance.new("ImageLabel"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	UIGradient_53 = Instance.new("UIGradient"),
+	ScrollingFrame_13 = Instance.new("ScrollingFrame"),
+	Diffuse_16 = Instance.new("Frame"),
+	Text_16 = Instance.new("TextLabel"),
+	UIGradient_54 = Instance.new("UIGradient"),
+	WhiteBar_14 = Instance.new("Frame"),
+	Slider_14 = Instance.new("Frame"),
+	UICorner_45 = Instance.new("UICorner"),
+	SliderCircle_14 = Instance.new("Frame"),
+	UICorner_46 = Instance.new("UICorner"),
+	Button_14 = Instance.new("TextButton"),
+	OnOrOff_14 = Instance.new("TextLabel"),
+	UIGradient_55 = Instance.new("UIGradient"),
+	UICorner_47 = Instance.new("UICorner"),
+	Frame_26 = Instance.new("ImageLabel"),
+	Frame_27 = Instance.new("ImageLabel"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	UIGradient_56 = Instance.new("UIGradient"),
+	ScrollingFrame_14 = Instance.new("ScrollingFrame"),
+	Diffuse_17 = Instance.new("Frame"),
+	Text_17 = Instance.new("TextLabel"),
+	UIGradient_57 = Instance.new("UIGradient"),
+	WhiteBar_15 = Instance.new("Frame"),
+	Slider_15 = Instance.new("Frame"),
+	UICorner_48 = Instance.new("UICorner"),
+	SliderCircle_15 = Instance.new("Frame"),
+	UICorner_49 = Instance.new("UICorner"),
+	Button_15 = Instance.new("TextButton"),
+	OnOrOff_15 = Instance.new("TextLabel"),
+	UIGradient_58 = Instance.new("UIGradient"),
+	UICorner_50 = Instance.new("UICorner"),
+	Frame_28 = Instance.new("ImageLabel"),
+	Frame_29 = Instance.new("ImageLabel"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	UIGradient_59 = Instance.new("UIGradient"),
+	ScrollingFrame_15 = Instance.new("ScrollingFrame"),
+}
+
+--Properties:
+
+ScreenGui.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ScreenGui.Frame.Parent = ScreenGui.ScreenGui
+ScreenGui.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame.BackgroundTransparency = 1.000
+ScreenGui.Frame.Position = UDim2.new(0.0663227737, 0, 0.0482954532, 0)
+ScreenGui.Frame.Size = UDim2.new(0, 1165, 0, 633)
+
+ScreenGui.MainFrame.Name = "MainFrame"
+ScreenGui.MainFrame.Parent = ScreenGui.Frame
+ScreenGui.MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.MainFrame.BackgroundTransparency = 1.000
+ScreenGui.MainFrame.Position = UDim2.new(0.281106472, 0, 0.204649761, 0)
+ScreenGui.MainFrame.Size = UDim2.new(0, 546, 0, 396)
+ScreenGui.MainFrame.Image = "rbxassetid://3570695787"
+ScreenGui.MainFrame.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.MainFrame.ScaleType = Enum.ScaleType.Slice
+ScreenGui.MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.MainFrame.SliceScale = 0.120
+
+ScreenGui.Title.Name = "Title"
+ScreenGui.Title.Parent = ScreenGui.MainFrame
+ScreenGui.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Title.BackgroundTransparency = 1.000
+ScreenGui.Title.Position = UDim2.new(0.0274725277, 0, 0, 0)
+ScreenGui.Title.Size = UDim2.new(0, 162, 0, 32)
+ScreenGui.Title.Font = Enum.Font.SourceSansBold
+ScreenGui.Title.Text = "ZoomHub"
+ScreenGui.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Title.TextScaled = true
+ScreenGui.Title.TextSize = 14.000
+ScreenGui.Title.TextWrapped = true
+ScreenGui.Title.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.gamename.Name = "gamename"
+ScreenGui.gamename.Parent = ScreenGui.MainFrame
+ScreenGui.gamename.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.gamename.BackgroundTransparency = 1.000
+ScreenGui.gamename.Position = UDim2.new(0.0274725277, 0, 0.0656565651, 0)
+ScreenGui.gamename.Size = UDim2.new(0, 431, 0, 16)
+ScreenGui.gamename.Font = Enum.Font.SourceSansBold
+ScreenGui.gamename.Text = "Tapping Legends X"
+ScreenGui.gamename.TextColor3 = Color3.fromRGB(198, 198, 198)
+ScreenGui.gamename.TextScaled = true
+ScreenGui.gamename.TextSize = 14.000
+ScreenGui.gamename.TextWrapped = true
+ScreenGui.gamename.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.Sidebar.Name = "Sidebar"
+ScreenGui.Sidebar.Parent = ScreenGui.MainFrame
+ScreenGui.Sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Sidebar.BackgroundTransparency = 1.000
+ScreenGui.Sidebar.Position = UDim2.new(0.012820513, 0, 0.106060609, 0)
+ScreenGui.Sidebar.Size = UDim2.new(0, 135, 0, 333)
+ScreenGui.Sidebar.Image = "rbxassetid://3570695787"
+ScreenGui.Sidebar.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Sidebar.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Sidebar.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Sidebar.SliceScale = 0.120
+
+ScreenGui.back.Name = "back"
+ScreenGui.back.Parent = ScreenGui.Sidebar
+ScreenGui.back.BackgroundColor3 = Color3.fromRGB(50, 62, 62)
+ScreenGui.back.BackgroundTransparency = 0.600
+ScreenGui.back.Position = UDim2.new(0, 0, 0.171000004, 0)
+ScreenGui.back.Size = UDim2.new(0, 126, 0, 28)
+
+ScreenGui.UICorner.CornerRadius = UDim.new(0, 100)
+ScreenGui.UICorner.Parent = ScreenGui.back
+
+ScreenGui.set.Name = "set"
+ScreenGui.set.Parent = ScreenGui.Sidebar
+ScreenGui.set.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.set.BackgroundTransparency = 1.000
+ScreenGui.set.Position = UDim2.new(0.256114364, 0, 0.41615665, 0)
+ScreenGui.set.Size = UDim2.new(0, 92, 0, 19)
+ScreenGui.set.Visible = false
+ScreenGui.set.Font = Enum.Font.SourceSansBold
+ScreenGui.set.Text = "Settings"
+ScreenGui.set.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.set.TextScaled = true
+ScreenGui.set.TextSize = 14.000
+ScreenGui.set.TextWrapped = true
+ScreenGui.set.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.homebt.Name = "homebt"
+ScreenGui.homebt.Parent = ScreenGui.set
+ScreenGui.homebt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.homebt.BackgroundTransparency = 1.000
+ScreenGui.homebt.Position = UDim2.new(-0.280128986, 0, 0, 0)
+ScreenGui.homebt.Size = UDim2.new(0.192530409, 0, 1.04347849, 0)
+ScreenGui.homebt.Image = "rbxassetid://8065244041"
+
+ScreenGui.UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient.Rotation = 1000
+ScreenGui.UIGradient.Parent = ScreenGui.homebt
+
+ScreenGui.UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_2.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_2.Rotation = 1000
+ScreenGui.UIGradient_2.Parent = ScreenGui.set
+
+ScreenGui.fam.Name = "fam"
+ScreenGui.fam.Parent = ScreenGui.Sidebar
+ScreenGui.fam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.fam.BackgroundTransparency = 1.000
+ScreenGui.fam.Position = UDim2.new(0.256114364, 0, 0.184925437, 0)
+ScreenGui.fam.Size = UDim2.new(0, 82, 0, 19)
+ScreenGui.fam.Font = Enum.Font.SourceSansBold
+ScreenGui.fam.Text = "AutoFarm"
+ScreenGui.fam.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.fam.TextScaled = true
+ScreenGui.fam.TextSize = 14.000
+ScreenGui.fam.TextWrapped = true
+ScreenGui.fam.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.homebt_2.Name = "homebt"
+ScreenGui.homebt_2.Parent = ScreenGui.fam
+ScreenGui.homebt_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.homebt_2.BackgroundTransparency = 1.000
+ScreenGui.homebt_2.Position = UDim2.new(-0.314291, 0, 0, 0)
+ScreenGui.homebt_2.Size = UDim2.new(0.226692349, 0, 1.04347849, 0)
+ScreenGui.homebt_2.Image = "rbxassetid://8065225548"
+
+ScreenGui.UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_3.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_3.Rotation = 1000
+ScreenGui.UIGradient_3.Parent = ScreenGui.homebt_2
+
+ScreenGui.UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_4.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_4.Rotation = 1000
+ScreenGui.UIGradient_4.Parent = ScreenGui.fam
+
+ScreenGui.pla.Name = "pla"
+ScreenGui.pla.Parent = ScreenGui.Sidebar
+ScreenGui.pla.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.pla.BackgroundTransparency = 1.000
+ScreenGui.pla.Position = UDim2.new(0.256114364, 0, 0.299039543, 0)
+ScreenGui.pla.Size = UDim2.new(0, 92, 0, 19)
+ScreenGui.pla.Font = Enum.Font.SourceSansBold
+ScreenGui.pla.Text = "LocalPlayer"
+ScreenGui.pla.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.pla.TextScaled = true
+ScreenGui.pla.TextSize = 14.000
+ScreenGui.pla.TextWrapped = true
+ScreenGui.pla.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.homebt_3.Name = "homebt"
+ScreenGui.homebt_3.Parent = ScreenGui.pla
+ScreenGui.homebt_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.homebt_3.BackgroundTransparency = 1.000
+ScreenGui.homebt_3.Position = UDim2.new(-0.280128986, 0, 0, 0)
+ScreenGui.homebt_3.Size = UDim2.new(0.192530409, 0, 1.04347849, 0)
+ScreenGui.homebt_3.Image = "rbxassetid://9267116576"
+
+ScreenGui.UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_5.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_5.Rotation = 1000
+ScreenGui.UIGradient_5.Parent = ScreenGui.homebt_3
+
+ScreenGui.UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_6.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_6.Rotation = 1000
+ScreenGui.UIGradient_6.Parent = ScreenGui.pla
+
+ScreenGui.home.Name = "home"
+ScreenGui.home.Parent = ScreenGui.Sidebar
+ScreenGui.home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.home.BackgroundTransparency = 1.000
+ScreenGui.home.Position = UDim2.new(0.256114364, 0, 0.075075075, 0)
+ScreenGui.home.Size = UDim2.new(0, 82, 0, 19)
+ScreenGui.home.Font = Enum.Font.SourceSansBold
+ScreenGui.home.Text = "HOME"
+ScreenGui.home.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.home.TextScaled = true
+ScreenGui.home.TextSize = 14.000
+ScreenGui.home.TextWrapped = true
+ScreenGui.home.TextXAlignment = Enum.TextXAlignment.Left
+
+ScreenGui.homebt_4.Name = "homebt"
+ScreenGui.homebt_4.Parent = ScreenGui.home
+ScreenGui.homebt_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.homebt_4.BackgroundTransparency = 1.000
+ScreenGui.homebt_4.Position = UDim2.new(-0.314291, 0, 0, 0)
+ScreenGui.homebt_4.Size = UDim2.new(0.226692349, 0, 1.04347849, 0)
+ScreenGui.homebt_4.Image = "rbxassetid://8065211639"
+
+ScreenGui.UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_7.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_7.Rotation = 1000
+ScreenGui.UIGradient_7.Parent = ScreenGui.homebt_4
+
+ScreenGui.UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_8.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_8.Rotation = 1000
+ScreenGui.UIGradient_8.Parent = ScreenGui.home
+
+ScreenGui.TextButton.Parent = ScreenGui.MainFrame
+ScreenGui.TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton.BackgroundTransparency = 1.000
+ScreenGui.TextButton.Position = UDim2.new(0.945054948, 0, 0.0303030312, 0)
+ScreenGui.TextButton.Size = UDim2.new(0, 20, 0, 20)
+ScreenGui.TextButton.Font = Enum.Font.SourceSans
+ScreenGui.TextButton.Text = "?"
+ScreenGui.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton.TextScaled = true
+ScreenGui.TextButton.TextSize = 14.000
+ScreenGui.TextButton.TextWrapped = true
+
+ScreenGui.Homeframe.Name = "Homeframe"
+ScreenGui.Homeframe.Parent = ScreenGui.MainFrame
+ScreenGui.Homeframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Homeframe.BackgroundTransparency = 1.000
+ScreenGui.Homeframe.ClipsDescendants = true
+ScreenGui.Homeframe.Position = UDim2.new(0.283882797, 0, 0.108400442, 0)
+ScreenGui.Homeframe.Size = UDim2.new(0, 381, 0, 0)
+ScreenGui.Homeframe.Image = "rbxassetid://3570695787"
+ScreenGui.Homeframe.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Homeframe.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Homeframe.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Homeframe.SliceScale = 0.120
+
+ScreenGui.TextLabel.Parent = ScreenGui.Homeframe
+ScreenGui.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel.BackgroundTransparency = 1.000
+ScreenGui.TextLabel.Position = UDim2.new(0.00787401572, 0, 0.129518077, 0)
+ScreenGui.TextLabel.Size = UDim2.new(0, 378, 0, 26)
+ScreenGui.TextLabel.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel.Text = "Every tapping simulators are trash ngl"
+ScreenGui.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel.TextScaled = true
+ScreenGui.TextLabel.TextSize = 14.000
+ScreenGui.TextLabel.TextWrapped = true
+
+ScreenGui.UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_9.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_9.Rotation = 1000
+ScreenGui.UIGradient_9.Parent = ScreenGui.TextLabel
+
+ScreenGui.TextLabel_2.Parent = ScreenGui.Homeframe
+ScreenGui.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_2.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_2.Position = UDim2.new(0, 0, 0.207831338, 0)
+ScreenGui.TextLabel_2.Size = UDim2.new(0, 378, 0, 20)
+ScreenGui.TextLabel_2.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_2.Text = "Hack created by Your local bozo"
+ScreenGui.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_2.TextScaled = true
+ScreenGui.TextLabel_2.TextSize = 14.000
+ScreenGui.TextLabel_2.TextWrapped = true
+
+ScreenGui.UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_10.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_10.Rotation = 1000
+ScreenGui.UIGradient_10.Parent = ScreenGui.TextLabel_2
+
+ScreenGui.PLAYERFRAME.Name = "PLAYERFRAME"
+ScreenGui.PLAYERFRAME.Parent = ScreenGui.MainFrame
+ScreenGui.PLAYERFRAME.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.PLAYERFRAME.BackgroundTransparency = 1.000
+ScreenGui.PLAYERFRAME.ClipsDescendants = true
+ScreenGui.PLAYERFRAME.Position = UDim2.new(0.283882797, 0, 0.108400442, 0)
+ScreenGui.PLAYERFRAME.Size = UDim2.new(0, 381, 0, 0)
+ScreenGui.PLAYERFRAME.Image = "rbxassetid://3570695787"
+ScreenGui.PLAYERFRAME.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.PLAYERFRAME.ScaleType = Enum.ScaleType.Slice
+ScreenGui.PLAYERFRAME.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.PLAYERFRAME.SliceScale = 0.120
+
+ScreenGui.Diffuse.Name = "Diffuse"
+ScreenGui.Diffuse.Parent = ScreenGui.PLAYERFRAME
+ScreenGui.Diffuse.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse.Position = UDim2.new(0.0358905643, 0, 0.0722810924, 0)
+ScreenGui.Diffuse.Size = UDim2.new(0.923789322, 0, 0.109919563, 0)
+
+ScreenGui.Text.Name = "Text"
+ScreenGui.Text.Parent = ScreenGui.Diffuse
+ScreenGui.Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text.BackgroundTransparency = 1.000
+ScreenGui.Text.Position = UDim2.new(0, 0, 0.238356814, 0)
+ScreenGui.Text.Size = UDim2.new(0.410472721, 0, 0.609882116, 0)
+ScreenGui.Text.ZIndex = 2
+ScreenGui.Text.Font = Enum.Font.SourceSansBold
+ScreenGui.Text.Text = "MAX SPEED"
+ScreenGui.Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text.TextScaled = true
+ScreenGui.Text.TextSize = 14.000
+ScreenGui.Text.TextWrapped = true
+
+ScreenGui.UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_11.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_11.Rotation = 1000
+ScreenGui.UIGradient_11.Parent = ScreenGui.Text
+
+ScreenGui.WhiteBar.Name = "WhiteBar"
+ScreenGui.WhiteBar.Parent = ScreenGui.Diffuse
+ScreenGui.WhiteBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar.BorderSizePixel = 0
+ScreenGui.WhiteBar.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider.Name = "Slider"
+ScreenGui.Slider.Parent = ScreenGui.Diffuse
+ScreenGui.Slider.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider.Position = UDim2.new(0.731114209, 0, 0.144637674, 0)
+ScreenGui.Slider.Size = UDim2.new(0.162454739, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_2.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_2.Parent = ScreenGui.Slider
+
+ScreenGui.SliderCircle.Name = "SliderCircle"
+ScreenGui.SliderCircle.Parent = ScreenGui.Slider
+ScreenGui.SliderCircle.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_3.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_3.Parent = ScreenGui.SliderCircle
+
+ScreenGui.Button.Name = "Button"
+ScreenGui.Button.Parent = ScreenGui.Slider
+ScreenGui.Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button.BackgroundTransparency = 1.000
+ScreenGui.Button.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button.ZIndex = 2
+ScreenGui.Button.Font = Enum.Font.SourceSans
+ScreenGui.Button.Text = " "
+ScreenGui.Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button.TextSize = 14.000
+
+ScreenGui.OnOrOff.Name = "OnOrOff"
+ScreenGui.OnOrOff.Parent = ScreenGui.Diffuse
+ScreenGui.OnOrOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff.Position = UDim2.new(0.470248282, 0, 0.195093334, 0)
+ScreenGui.OnOrOff.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff.ZIndex = 2
+ScreenGui.OnOrOff.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff.Text = "False"
+ScreenGui.OnOrOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff.TextScaled = true
+ScreenGui.OnOrOff.TextSize = 14.000
+ScreenGui.OnOrOff.TextWrapped = true
+
+ScreenGui.UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_12.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_12.Rotation = 1000
+ScreenGui.UIGradient_12.Parent = ScreenGui.OnOrOff
+
+ScreenGui.UICorner_4.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_4.Parent = ScreenGui.Diffuse
+
+ScreenGui.SettingsFrame.Name = "SettingsFrame"
+ScreenGui.SettingsFrame.Parent = ScreenGui.MainFrame
+ScreenGui.SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SettingsFrame.BackgroundTransparency = 1.000
+ScreenGui.SettingsFrame.ClipsDescendants = true
+ScreenGui.SettingsFrame.Position = UDim2.new(0.283882797, 0, 0.108400442, 0)
+ScreenGui.SettingsFrame.Size = UDim2.new(0, 381, 0, 0)
+ScreenGui.SettingsFrame.Image = "rbxassetid://3570695787"
+ScreenGui.SettingsFrame.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.SettingsFrame.ScaleType = Enum.ScaleType.Slice
+ScreenGui.SettingsFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.SettingsFrame.SliceScale = 0.120
+
+ScreenGui.Autofarmframe.Name = "Autofarmframe"
+ScreenGui.Autofarmframe.Parent = ScreenGui.MainFrame
+ScreenGui.Autofarmframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Autofarmframe.BackgroundTransparency = 1.000
+ScreenGui.Autofarmframe.ClipsDescendants = true
+ScreenGui.Autofarmframe.Position = UDim2.new(0.280219793, 0, 0.103535354, 0)
+ScreenGui.Autofarmframe.Size = UDim2.new(0, 613, 0, 334)
+
+ScreenGui.Autofarmfr1ame.Name = "Autofarmfr1ame"
+ScreenGui.Autofarmfr1ame.Parent = ScreenGui.Autofarmframe
+ScreenGui.Autofarmfr1ame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Autofarmfr1ame.BackgroundTransparency = 1.000
+ScreenGui.Autofarmfr1ame.Position = UDim2.new(-0.00228071213, 0, 0.00254458934, 0)
+ScreenGui.Autofarmfr1ame.Size = UDim2.new(0, 381, 0, 332)
+ScreenGui.Autofarmfr1ame.Image = "rbxassetid://3570695787"
+ScreenGui.Autofarmfr1ame.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Autofarmfr1ame.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Autofarmfr1ame.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Autofarmfr1ame.SliceScale = 0.120
+
+ScreenGui.Diffuse_2.Name = "Diffuse"
+ScreenGui.Diffuse_2.Parent = ScreenGui.Autofarmfr1ame
+ScreenGui.Diffuse_2.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_2.Position = UDim2.new(0.0358905643, 0, 0.0722810924, 0)
+ScreenGui.Diffuse_2.Size = UDim2.new(0.923789322, 0, 0.109919563, 0)
+
+ScreenGui.Text_2.Name = "Text"
+ScreenGui.Text_2.Parent = ScreenGui.Diffuse_2
+ScreenGui.Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_2.BackgroundTransparency = 1.000
+ScreenGui.Text_2.Position = UDim2.new(0, 0, 0.238356814, 0)
+ScreenGui.Text_2.Size = UDim2.new(0.410472721, 0, 0.609882116, 0)
+ScreenGui.Text_2.ZIndex = 2
+ScreenGui.Text_2.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_2.Text = "AutoClick"
+ScreenGui.Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_2.TextScaled = true
+ScreenGui.Text_2.TextSize = 14.000
+ScreenGui.Text_2.TextWrapped = true
+
+ScreenGui.UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_13.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_13.Rotation = 1000
+ScreenGui.UIGradient_13.Parent = ScreenGui.Text_2
+
+ScreenGui.WhiteBar_2.Name = "WhiteBar"
+ScreenGui.WhiteBar_2.Parent = ScreenGui.Diffuse_2
+ScreenGui.WhiteBar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_2.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_2.BorderSizePixel = 0
+ScreenGui.WhiteBar_2.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_2.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_2.Name = "Slider"
+ScreenGui.Slider_2.Parent = ScreenGui.Diffuse_2
+ScreenGui.Slider_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_2.Position = UDim2.new(0.731114209, 0, 0.144637674, 0)
+ScreenGui.Slider_2.Size = UDim2.new(0.162454739, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_5.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_5.Parent = ScreenGui.Slider_2
+
+ScreenGui.SliderCircle_2.Name = "SliderCircle"
+ScreenGui.SliderCircle_2.Parent = ScreenGui.Slider_2
+ScreenGui.SliderCircle_2.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_2.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_2.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_6.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_6.Parent = ScreenGui.SliderCircle_2
+
+ScreenGui.Button_2.Name = "Button"
+ScreenGui.Button_2.Parent = ScreenGui.Slider_2
+ScreenGui.Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_2.BackgroundTransparency = 1.000
+ScreenGui.Button_2.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_2.ZIndex = 2
+ScreenGui.Button_2.Font = Enum.Font.SourceSans
+ScreenGui.Button_2.Text = " "
+ScreenGui.Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_2.TextSize = 14.000
+
+ScreenGui.OnOrOff_2.Name = "OnOrOff"
+ScreenGui.OnOrOff_2.Parent = ScreenGui.Diffuse_2
+ScreenGui.OnOrOff_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_2.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_2.Position = UDim2.new(0.470248282, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_2.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_2.ZIndex = 2
+ScreenGui.OnOrOff_2.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_2.Text = "False"
+ScreenGui.OnOrOff_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_2.TextScaled = true
+ScreenGui.OnOrOff_2.TextSize = 14.000
+ScreenGui.OnOrOff_2.TextWrapped = true
+
+ScreenGui.UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_14.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_14.Rotation = 1000
+ScreenGui.UIGradient_14.Parent = ScreenGui.OnOrOff_2
+
+ScreenGui.UICorner_7.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_7.Parent = ScreenGui.Diffuse_2
+
+ScreenGui.Diffuse_3.Name = "Diffuse"
+ScreenGui.Diffuse_3.Parent = ScreenGui.Autofarmfr1ame
+ScreenGui.Diffuse_3.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_3.Position = UDim2.new(0.0358905643, 0, 0.219871446, 0)
+ScreenGui.Diffuse_3.Size = UDim2.new(0.923789322, 0, 0.109919563, 0)
+
+ScreenGui.Text_3.Name = "Text"
+ScreenGui.Text_3.Parent = ScreenGui.Diffuse_3
+ScreenGui.Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_3.BackgroundTransparency = 1.000
+ScreenGui.Text_3.Position = UDim2.new(0.267072976, 0, 0.128747627, 0)
+ScreenGui.Text_3.Size = UDim2.new(0.410472721, 0, 0.609882116, 0)
+ScreenGui.Text_3.ZIndex = 2
+ScreenGui.Text_3.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_3.Text = "AutoRebirth"
+ScreenGui.Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_3.TextScaled = true
+ScreenGui.Text_3.TextSize = 14.000
+ScreenGui.Text_3.TextWrapped = true
+
+ScreenGui.UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_15.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_15.Rotation = 1000
+ScreenGui.UIGradient_15.Parent = ScreenGui.Text_3
+
+ScreenGui.UICorner_8.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_8.Parent = ScreenGui.Diffuse_3
+
+ScreenGui.TextButton_2.Parent = ScreenGui.Diffuse_3
+ScreenGui.TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_2.Position = UDim2.new(0.903502166, 0, 0.144638091, 0)
+ScreenGui.TextButton_2.Size = UDim2.new(0, 25, 0, 26)
+ScreenGui.TextButton_2.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_2.Text = ""
+ScreenGui.TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_2.TextScaled = true
+ScreenGui.TextButton_2.TextSize = 14.000
+ScreenGui.TextButton_2.TextWrapped = true
+
+ScreenGui.UICorner_9.CornerRadius = UDim.new(0, 100)
+ScreenGui.UICorner_9.Parent = ScreenGui.TextButton_2
+
+ScreenGui.UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_16.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_16.Rotation = 1000
+ScreenGui.UIGradient_16.Parent = ScreenGui.TextButton_2
+
+ScreenGui.TextButton_3.Parent = ScreenGui.TextButton_2
+ScreenGui.TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_3.BackgroundTransparency = 1.000
+ScreenGui.TextButton_3.Position = UDim2.new(0, 0, -0.15384616, 0)
+ScreenGui.TextButton_3.Size = UDim2.new(0, 25, 0, 32)
+ScreenGui.TextButton_3.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_3.Text = ">"
+ScreenGui.TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_3.TextScaled = true
+ScreenGui.TextButton_3.TextSize = 14.000
+ScreenGui.TextButton_3.TextWrapped = true
+
+ScreenGui.MAMA.Name = "MAMA"
+ScreenGui.MAMA.Parent = ScreenGui.Diffuse_3
+ScreenGui.MAMA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.MAMA.BackgroundTransparency = 1.000
+ScreenGui.MAMA.ClipsDescendants = true
+ScreenGui.MAMA.Position = UDim2.new(1.10522711, 0, -1.12349415, 0)
+ScreenGui.MAMA.Size = UDim2.new(0, 200, 0, 0)
+ScreenGui.MAMA.Visible = false
+ScreenGui.MAMA.Image = "rbxassetid://3570695787"
+ScreenGui.MAMA.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.MAMA.ScaleType = Enum.ScaleType.Slice
+ScreenGui.MAMA.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.MAMA.SliceScale = 0.120
+
+ScreenGui.Frame_2.Name = "Frame"
+ScreenGui.Frame_2.Parent = ScreenGui.MAMA
+ScreenGui.Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_2.BackgroundTransparency = 1.000
+ScreenGui.Frame_2.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_2.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_2.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_2.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_2.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_2.SliceScale = 0.120
+
+ScreenGui.TextLabel_3.Parent = ScreenGui.Frame_2
+ScreenGui.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_3.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_3.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_3.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_3.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_3.Text = "REBIRTHS"
+ScreenGui.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_3.TextScaled = true
+ScreenGui.TextLabel_3.TextSize = 14.000
+ScreenGui.TextLabel_3.TextWrapped = true
+
+ScreenGui.UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_17.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_17.Rotation = 1000
+ScreenGui.UIGradient_17.Parent = ScreenGui.TextLabel_3
+
+ScreenGui.ScrollingFrame.Parent = ScreenGui.Frame_2
+ScreenGui.ScrollingFrame.Active = true
+ScreenGui.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_4.Name = "Diffuse"
+ScreenGui.Diffuse_4.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_4.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_4.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_4.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_4.Name = "Text"
+ScreenGui.Text_4.Parent = ScreenGui.Diffuse_4
+ScreenGui.Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_4.BackgroundTransparency = 1.000
+ScreenGui.Text_4.Position = UDim2.new(0, 0, 0.0141759887, 0)
+ScreenGui.Text_4.Size = UDim2.new(0.470248044, 0, 0.985823214, 0)
+ScreenGui.Text_4.ZIndex = 2
+ScreenGui.Text_4.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_4.Text = "1 REBIRTH"
+ScreenGui.Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_4.TextScaled = true
+ScreenGui.Text_4.TextSize = 14.000
+ScreenGui.Text_4.TextWrapped = true
+
+ScreenGui.UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_18.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_18.Rotation = 1000
+ScreenGui.UIGradient_18.Parent = ScreenGui.Text_4
+
+ScreenGui.WhiteBar_3.Name = "WhiteBar"
+ScreenGui.WhiteBar_3.Parent = ScreenGui.Diffuse_4
+ScreenGui.WhiteBar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_3.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_3.BorderSizePixel = 0
+ScreenGui.WhiteBar_3.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_3.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_3.Name = "Slider"
+ScreenGui.Slider_3.Parent = ScreenGui.Diffuse_4
+ScreenGui.Slider_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_3.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_3.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_10.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_10.Parent = ScreenGui.Slider_3
+
+ScreenGui.SliderCircle_3.Name = "SliderCircle"
+ScreenGui.SliderCircle_3.Parent = ScreenGui.Slider_3
+ScreenGui.SliderCircle_3.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_3.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_3.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_11.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_11.Parent = ScreenGui.SliderCircle_3
+
+ScreenGui.Button_3.Name = "Button"
+ScreenGui.Button_3.Parent = ScreenGui.Slider_3
+ScreenGui.Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_3.BackgroundTransparency = 1.000
+ScreenGui.Button_3.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_3.ZIndex = 2
+ScreenGui.Button_3.Font = Enum.Font.SourceSans
+ScreenGui.Button_3.Text = " "
+ScreenGui.Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_3.TextSize = 14.000
+
+ScreenGui.OnOrOff_3.Name = "OnOrOff"
+ScreenGui.OnOrOff_3.Parent = ScreenGui.Diffuse_4
+ScreenGui.OnOrOff_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_3.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_3.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_3.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_3.ZIndex = 2
+ScreenGui.OnOrOff_3.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_3.Text = "False"
+ScreenGui.OnOrOff_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_3.TextScaled = true
+ScreenGui.OnOrOff_3.TextSize = 14.000
+ScreenGui.OnOrOff_3.TextWrapped = true
+
+ScreenGui.UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_19.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_19.Rotation = 1000
+ScreenGui.UIGradient_19.Parent = ScreenGui.OnOrOff_3
+
+ScreenGui.UICorner_12.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_12.Parent = ScreenGui.Diffuse_4
+
+ScreenGui.Frame_3.Name = "Frame"
+ScreenGui.Frame_3.Parent = ScreenGui.Diffuse_4
+ScreenGui.Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_3.BackgroundTransparency = 1.000
+ScreenGui.Frame_3.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_3.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_3.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_3.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_3.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_3.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_3.SliceScale = 0.120
+
+ScreenGui.Frame_4.Name = "Frame"
+ScreenGui.Frame_4.Parent = ScreenGui.Frame_3
+ScreenGui.Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_4.BackgroundTransparency = 1.000
+ScreenGui.Frame_4.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_4.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_4.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_4.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_4.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_4.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_4.SliceScale = 0.120
+
+ScreenGui.TextLabel_4.Parent = ScreenGui.Frame_4
+ScreenGui.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_4.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_4.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_4.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_4.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_4.Text = "UPGRADES"
+ScreenGui.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_4.TextScaled = true
+ScreenGui.TextLabel_4.TextSize = 14.000
+ScreenGui.TextLabel_4.TextWrapped = true
+
+ScreenGui.UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_20.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_20.Rotation = 1000
+ScreenGui.UIGradient_20.Parent = ScreenGui.TextLabel_4
+
+ScreenGui.ScrollingFrame_2.Parent = ScreenGui.Frame_4
+ScreenGui.ScrollingFrame_2.Active = true
+ScreenGui.ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_2.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_2.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_2.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_2.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_2.ScrollBarThickness = 5
+
+ScreenGui.UIListLayout.Parent = ScreenGui.ScrollingFrame
+ScreenGui.UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ScreenGui.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+ScreenGui.UIListLayout.Padding = UDim.new(0, 7)
+
+ScreenGui.Diffuse_5.Name = "Diffuse"
+ScreenGui.Diffuse_5.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_5.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_5.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_5.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_5.Name = "Text"
+ScreenGui.Text_5.Parent = ScreenGui.Diffuse_5
+ScreenGui.Text_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_5.BackgroundTransparency = 1.000
+ScreenGui.Text_5.Position = UDim2.new(0, 0, 0.0141759887, 0)
+ScreenGui.Text_5.Size = UDim2.new(0.470248044, 0, 0.985823214, 0)
+ScreenGui.Text_5.ZIndex = 2
+ScreenGui.Text_5.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_5.Text = "5 REBIRTHS"
+ScreenGui.Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_5.TextScaled = true
+ScreenGui.Text_5.TextSize = 14.000
+ScreenGui.Text_5.TextWrapped = true
+
+ScreenGui.UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_21.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_21.Rotation = 1000
+ScreenGui.UIGradient_21.Parent = ScreenGui.Text_5
+
+ScreenGui.WhiteBar_4.Name = "WhiteBar"
+ScreenGui.WhiteBar_4.Parent = ScreenGui.Diffuse_5
+ScreenGui.WhiteBar_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_4.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_4.BorderSizePixel = 0
+ScreenGui.WhiteBar_4.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_4.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_4.Name = "Slider"
+ScreenGui.Slider_4.Parent = ScreenGui.Diffuse_5
+ScreenGui.Slider_4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_4.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_4.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_13.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_13.Parent = ScreenGui.Slider_4
+
+ScreenGui.SliderCircle_4.Name = "SliderCircle"
+ScreenGui.SliderCircle_4.Parent = ScreenGui.Slider_4
+ScreenGui.SliderCircle_4.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_4.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_4.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_14.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_14.Parent = ScreenGui.SliderCircle_4
+
+ScreenGui.Button_4.Name = "Button"
+ScreenGui.Button_4.Parent = ScreenGui.Slider_4
+ScreenGui.Button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_4.BackgroundTransparency = 1.000
+ScreenGui.Button_4.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_4.ZIndex = 2
+ScreenGui.Button_4.Font = Enum.Font.SourceSans
+ScreenGui.Button_4.Text = " "
+ScreenGui.Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_4.TextSize = 14.000
+
+ScreenGui.OnOrOff_4.Name = "OnOrOff"
+ScreenGui.OnOrOff_4.Parent = ScreenGui.Diffuse_5
+ScreenGui.OnOrOff_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_4.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_4.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_4.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_4.ZIndex = 2
+ScreenGui.OnOrOff_4.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_4.Text = "False"
+ScreenGui.OnOrOff_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_4.TextScaled = true
+ScreenGui.OnOrOff_4.TextSize = 14.000
+ScreenGui.OnOrOff_4.TextWrapped = true
+
+ScreenGui.UIGradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_22.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_22.Rotation = 1000
+ScreenGui.UIGradient_22.Parent = ScreenGui.OnOrOff_4
+
+ScreenGui.UICorner_15.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_15.Parent = ScreenGui.Diffuse_5
+
+ScreenGui.Frame_5.Name = "Frame"
+ScreenGui.Frame_5.Parent = ScreenGui.Diffuse_5
+ScreenGui.Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_5.BackgroundTransparency = 1.000
+ScreenGui.Frame_5.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_5.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_5.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_5.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_5.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_5.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_5.SliceScale = 0.120
+
+ScreenGui.Frame_6.Name = "Frame"
+ScreenGui.Frame_6.Parent = ScreenGui.Frame_5
+ScreenGui.Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_6.BackgroundTransparency = 1.000
+ScreenGui.Frame_6.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_6.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_6.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_6.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_6.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_6.SliceScale = 0.120
+
+ScreenGui.TextLabel_5.Parent = ScreenGui.Frame_6
+ScreenGui.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_5.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_5.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_5.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_5.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_5.Text = "UPGRADES"
+ScreenGui.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_5.TextScaled = true
+ScreenGui.TextLabel_5.TextSize = 14.000
+ScreenGui.TextLabel_5.TextWrapped = true
+
+ScreenGui.UIGradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_23.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_23.Rotation = 1000
+ScreenGui.UIGradient_23.Parent = ScreenGui.TextLabel_5
+
+ScreenGui.ScrollingFrame_3.Parent = ScreenGui.Frame_6
+ScreenGui.ScrollingFrame_3.Active = true
+ScreenGui.ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_3.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_3.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_3.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_3.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_3.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_6.Name = "Diffuse"
+ScreenGui.Diffuse_6.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_6.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_6.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_6.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_6.Name = "Text"
+ScreenGui.Text_6.Parent = ScreenGui.Diffuse_6
+ScreenGui.Text_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_6.BackgroundTransparency = 1.000
+ScreenGui.Text_6.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_6.Size = UDim2.new(0.470248044, 0, 0.683206916, 0)
+ScreenGui.Text_6.ZIndex = 2
+ScreenGui.Text_6.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_6.Text = "20 REBIRTHS"
+ScreenGui.Text_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_6.TextScaled = true
+ScreenGui.Text_6.TextSize = 14.000
+ScreenGui.Text_6.TextWrapped = true
+
+ScreenGui.UIGradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_24.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_24.Rotation = 1000
+ScreenGui.UIGradient_24.Parent = ScreenGui.Text_6
+
+ScreenGui.WhiteBar_5.Name = "WhiteBar"
+ScreenGui.WhiteBar_5.Parent = ScreenGui.Diffuse_6
+ScreenGui.WhiteBar_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_5.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_5.BorderSizePixel = 0
+ScreenGui.WhiteBar_5.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_5.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_5.Name = "Slider"
+ScreenGui.Slider_5.Parent = ScreenGui.Diffuse_6
+ScreenGui.Slider_5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_5.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_5.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_16.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_16.Parent = ScreenGui.Slider_5
+
+ScreenGui.SliderCircle_5.Name = "SliderCircle"
+ScreenGui.SliderCircle_5.Parent = ScreenGui.Slider_5
+ScreenGui.SliderCircle_5.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_5.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_5.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_17.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_17.Parent = ScreenGui.SliderCircle_5
+
+ScreenGui.Button_5.Name = "Button"
+ScreenGui.Button_5.Parent = ScreenGui.Slider_5
+ScreenGui.Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_5.BackgroundTransparency = 1.000
+ScreenGui.Button_5.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_5.ZIndex = 2
+ScreenGui.Button_5.Font = Enum.Font.SourceSans
+ScreenGui.Button_5.Text = " "
+ScreenGui.Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_5.TextSize = 14.000
+
+ScreenGui.OnOrOff_5.Name = "OnOrOff"
+ScreenGui.OnOrOff_5.Parent = ScreenGui.Diffuse_6
+ScreenGui.OnOrOff_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_5.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_5.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_5.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_5.ZIndex = 2
+ScreenGui.OnOrOff_5.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_5.Text = "False"
+ScreenGui.OnOrOff_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_5.TextScaled = true
+ScreenGui.OnOrOff_5.TextSize = 14.000
+ScreenGui.OnOrOff_5.TextWrapped = true
+
+ScreenGui.UIGradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_25.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_25.Rotation = 1000
+ScreenGui.UIGradient_25.Parent = ScreenGui.OnOrOff_5
+
+ScreenGui.UICorner_18.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_18.Parent = ScreenGui.Diffuse_6
+
+ScreenGui.Frame_7.Name = "Frame"
+ScreenGui.Frame_7.Parent = ScreenGui.Diffuse_6
+ScreenGui.Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_7.BackgroundTransparency = 1.000
+ScreenGui.Frame_7.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_7.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_7.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_7.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_7.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_7.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_7.SliceScale = 0.120
+
+ScreenGui.Frame_8.Name = "Frame"
+ScreenGui.Frame_8.Parent = ScreenGui.Frame_7
+ScreenGui.Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_8.BackgroundTransparency = 1.000
+ScreenGui.Frame_8.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_8.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_8.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_8.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_8.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_8.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_8.SliceScale = 0.120
+
+ScreenGui.TextLabel_6.Parent = ScreenGui.Frame_8
+ScreenGui.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_6.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_6.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_6.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_6.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_6.Text = "UPGRADES"
+ScreenGui.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_6.TextScaled = true
+ScreenGui.TextLabel_6.TextSize = 14.000
+ScreenGui.TextLabel_6.TextWrapped = true
+
+ScreenGui.UIGradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_26.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_26.Rotation = 1000
+ScreenGui.UIGradient_26.Parent = ScreenGui.TextLabel_6
+
+ScreenGui.ScrollingFrame_4.Parent = ScreenGui.Frame_8
+ScreenGui.ScrollingFrame_4.Active = true
+ScreenGui.ScrollingFrame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_4.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_4.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_4.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_4.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_4.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_7.Name = "Diffuse"
+ScreenGui.Diffuse_7.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_7.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_7.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_7.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_7.Name = "Text"
+ScreenGui.Text_7.Parent = ScreenGui.Diffuse_7
+ScreenGui.Text_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_7.BackgroundTransparency = 1.000
+ScreenGui.Text_7.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_7.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_7.ZIndex = 2
+ScreenGui.Text_7.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_7.Text = "80 REBIRTHS"
+ScreenGui.Text_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_7.TextScaled = true
+ScreenGui.Text_7.TextSize = 14.000
+ScreenGui.Text_7.TextWrapped = true
+
+ScreenGui.UIGradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_27.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_27.Rotation = 1000
+ScreenGui.UIGradient_27.Parent = ScreenGui.Text_7
+
+ScreenGui.WhiteBar_6.Name = "WhiteBar"
+ScreenGui.WhiteBar_6.Parent = ScreenGui.Diffuse_7
+ScreenGui.WhiteBar_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_6.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_6.BorderSizePixel = 0
+ScreenGui.WhiteBar_6.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_6.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_6.Name = "Slider"
+ScreenGui.Slider_6.Parent = ScreenGui.Diffuse_7
+ScreenGui.Slider_6.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_6.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_6.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_19.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_19.Parent = ScreenGui.Slider_6
+
+ScreenGui.SliderCircle_6.Name = "SliderCircle"
+ScreenGui.SliderCircle_6.Parent = ScreenGui.Slider_6
+ScreenGui.SliderCircle_6.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_6.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_6.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_20.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_20.Parent = ScreenGui.SliderCircle_6
+
+ScreenGui.Button_6.Name = "Button"
+ScreenGui.Button_6.Parent = ScreenGui.Slider_6
+ScreenGui.Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_6.BackgroundTransparency = 1.000
+ScreenGui.Button_6.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_6.ZIndex = 2
+ScreenGui.Button_6.Font = Enum.Font.SourceSans
+ScreenGui.Button_6.Text = " "
+ScreenGui.Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_6.TextSize = 14.000
+
+ScreenGui.OnOrOff_6.Name = "OnOrOff"
+ScreenGui.OnOrOff_6.Parent = ScreenGui.Diffuse_7
+ScreenGui.OnOrOff_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_6.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_6.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_6.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_6.ZIndex = 2
+ScreenGui.OnOrOff_6.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_6.Text = "False"
+ScreenGui.OnOrOff_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_6.TextScaled = true
+ScreenGui.OnOrOff_6.TextSize = 14.000
+ScreenGui.OnOrOff_6.TextWrapped = true
+
+ScreenGui.UIGradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_28.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_28.Rotation = 1000
+ScreenGui.UIGradient_28.Parent = ScreenGui.OnOrOff_6
+
+ScreenGui.UICorner_21.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_21.Parent = ScreenGui.Diffuse_7
+
+ScreenGui.Frame_9.Name = "Frame"
+ScreenGui.Frame_9.Parent = ScreenGui.Diffuse_7
+ScreenGui.Frame_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_9.BackgroundTransparency = 1.000
+ScreenGui.Frame_9.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_9.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_9.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_9.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_9.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_9.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_9.SliceScale = 0.120
+
+ScreenGui.Frame_10.Name = "Frame"
+ScreenGui.Frame_10.Parent = ScreenGui.Frame_9
+ScreenGui.Frame_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_10.BackgroundTransparency = 1.000
+ScreenGui.Frame_10.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_10.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_10.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_10.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_10.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_10.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_10.SliceScale = 0.120
+
+ScreenGui.TextLabel_7.Parent = ScreenGui.Frame_10
+ScreenGui.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_7.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_7.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_7.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_7.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_7.Text = "UPGRADES"
+ScreenGui.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_7.TextScaled = true
+ScreenGui.TextLabel_7.TextSize = 14.000
+ScreenGui.TextLabel_7.TextWrapped = true
+
+ScreenGui.UIGradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_29.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_29.Rotation = 1000
+ScreenGui.UIGradient_29.Parent = ScreenGui.TextLabel_7
+
+ScreenGui.ScrollingFrame_5.Parent = ScreenGui.Frame_10
+ScreenGui.ScrollingFrame_5.Active = true
+ScreenGui.ScrollingFrame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_5.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_5.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_5.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_5.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_5.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_8.Name = "Diffuse"
+ScreenGui.Diffuse_8.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_8.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_8.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_8.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_8.Name = "Text"
+ScreenGui.Text_8.Parent = ScreenGui.Diffuse_8
+ScreenGui.Text_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_8.BackgroundTransparency = 1.000
+ScreenGui.Text_8.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_8.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_8.ZIndex = 2
+ScreenGui.Text_8.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_8.Text = "400 REBIRTHS"
+ScreenGui.Text_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_8.TextScaled = true
+ScreenGui.Text_8.TextSize = 14.000
+ScreenGui.Text_8.TextWrapped = true
+
+ScreenGui.UIGradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_30.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_30.Rotation = 1000
+ScreenGui.UIGradient_30.Parent = ScreenGui.Text_8
+
+ScreenGui.WhiteBar_7.Name = "WhiteBar"
+ScreenGui.WhiteBar_7.Parent = ScreenGui.Diffuse_8
+ScreenGui.WhiteBar_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_7.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_7.BorderSizePixel = 0
+ScreenGui.WhiteBar_7.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_7.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_7.Name = "Slider"
+ScreenGui.Slider_7.Parent = ScreenGui.Diffuse_8
+ScreenGui.Slider_7.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_7.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_7.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_22.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_22.Parent = ScreenGui.Slider_7
+
+ScreenGui.SliderCircle_7.Name = "SliderCircle"
+ScreenGui.SliderCircle_7.Parent = ScreenGui.Slider_7
+ScreenGui.SliderCircle_7.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_7.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_7.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_23.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_23.Parent = ScreenGui.SliderCircle_7
+
+ScreenGui.Button_7.Name = "Button"
+ScreenGui.Button_7.Parent = ScreenGui.Slider_7
+ScreenGui.Button_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_7.BackgroundTransparency = 1.000
+ScreenGui.Button_7.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_7.ZIndex = 2
+ScreenGui.Button_7.Font = Enum.Font.SourceSans
+ScreenGui.Button_7.Text = " "
+ScreenGui.Button_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_7.TextSize = 14.000
+
+ScreenGui.OnOrOff_7.Name = "OnOrOff"
+ScreenGui.OnOrOff_7.Parent = ScreenGui.Diffuse_8
+ScreenGui.OnOrOff_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_7.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_7.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_7.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_7.ZIndex = 2
+ScreenGui.OnOrOff_7.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_7.Text = "False"
+ScreenGui.OnOrOff_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_7.TextScaled = true
+ScreenGui.OnOrOff_7.TextSize = 14.000
+ScreenGui.OnOrOff_7.TextWrapped = true
+
+ScreenGui.UIGradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_31.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_31.Rotation = 1000
+ScreenGui.UIGradient_31.Parent = ScreenGui.OnOrOff_7
+
+ScreenGui.UICorner_24.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_24.Parent = ScreenGui.Diffuse_8
+
+ScreenGui.Frame_11.Name = "Frame"
+ScreenGui.Frame_11.Parent = ScreenGui.Diffuse_8
+ScreenGui.Frame_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_11.BackgroundTransparency = 1.000
+ScreenGui.Frame_11.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_11.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_11.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_11.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_11.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_11.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_11.SliceScale = 0.120
+
+ScreenGui.Frame_12.Name = "Frame"
+ScreenGui.Frame_12.Parent = ScreenGui.Frame_11
+ScreenGui.Frame_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_12.BackgroundTransparency = 1.000
+ScreenGui.Frame_12.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_12.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_12.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_12.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_12.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_12.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_12.SliceScale = 0.120
+
+ScreenGui.TextLabel_8.Parent = ScreenGui.Frame_12
+ScreenGui.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_8.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_8.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_8.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_8.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_8.Text = "UPGRADES"
+ScreenGui.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_8.TextScaled = true
+ScreenGui.TextLabel_8.TextSize = 14.000
+ScreenGui.TextLabel_8.TextWrapped = true
+
+ScreenGui.UIGradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_32.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_32.Rotation = 1000
+ScreenGui.UIGradient_32.Parent = ScreenGui.TextLabel_8
+
+ScreenGui.ScrollingFrame_6.Parent = ScreenGui.Frame_12
+ScreenGui.ScrollingFrame_6.Active = true
+ScreenGui.ScrollingFrame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_6.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_6.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_6.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_6.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_6.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_9.Name = "Diffuse"
+ScreenGui.Diffuse_9.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_9.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_9.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_9.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_9.Name = "Text"
+ScreenGui.Text_9.Parent = ScreenGui.Diffuse_9
+ScreenGui.Text_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_9.BackgroundTransparency = 1.000
+ScreenGui.Text_9.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_9.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_9.ZIndex = 2
+ScreenGui.Text_9.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_9.Text = "2K REBIRTHS"
+ScreenGui.Text_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_9.TextScaled = true
+ScreenGui.Text_9.TextSize = 14.000
+ScreenGui.Text_9.TextWrapped = true
+
+ScreenGui.UIGradient_33.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_33.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_33.Rotation = 1000
+ScreenGui.UIGradient_33.Parent = ScreenGui.Text_9
+
+ScreenGui.WhiteBar_8.Name = "WhiteBar"
+ScreenGui.WhiteBar_8.Parent = ScreenGui.Diffuse_9
+ScreenGui.WhiteBar_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_8.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_8.BorderSizePixel = 0
+ScreenGui.WhiteBar_8.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_8.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_8.Name = "Slider"
+ScreenGui.Slider_8.Parent = ScreenGui.Diffuse_9
+ScreenGui.Slider_8.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_8.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_8.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_25.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_25.Parent = ScreenGui.Slider_8
+
+ScreenGui.SliderCircle_8.Name = "SliderCircle"
+ScreenGui.SliderCircle_8.Parent = ScreenGui.Slider_8
+ScreenGui.SliderCircle_8.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_8.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_8.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_26.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_26.Parent = ScreenGui.SliderCircle_8
+
+ScreenGui.Button_8.Name = "Button"
+ScreenGui.Button_8.Parent = ScreenGui.Slider_8
+ScreenGui.Button_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_8.BackgroundTransparency = 1.000
+ScreenGui.Button_8.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_8.ZIndex = 2
+ScreenGui.Button_8.Font = Enum.Font.SourceSans
+ScreenGui.Button_8.Text = " "
+ScreenGui.Button_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_8.TextSize = 14.000
+
+ScreenGui.OnOrOff_8.Name = "OnOrOff"
+ScreenGui.OnOrOff_8.Parent = ScreenGui.Diffuse_9
+ScreenGui.OnOrOff_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_8.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_8.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_8.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_8.ZIndex = 2
+ScreenGui.OnOrOff_8.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_8.Text = "False"
+ScreenGui.OnOrOff_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_8.TextScaled = true
+ScreenGui.OnOrOff_8.TextSize = 14.000
+ScreenGui.OnOrOff_8.TextWrapped = true
+
+ScreenGui.UIGradient_34.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_34.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_34.Rotation = 1000
+ScreenGui.UIGradient_34.Parent = ScreenGui.OnOrOff_8
+
+ScreenGui.UICorner_27.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_27.Parent = ScreenGui.Diffuse_9
+
+ScreenGui.Frame_13.Name = "Frame"
+ScreenGui.Frame_13.Parent = ScreenGui.Diffuse_9
+ScreenGui.Frame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_13.BackgroundTransparency = 1.000
+ScreenGui.Frame_13.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_13.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_13.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_13.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_13.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_13.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_13.SliceScale = 0.120
+
+ScreenGui.Frame_14.Name = "Frame"
+ScreenGui.Frame_14.Parent = ScreenGui.Frame_13
+ScreenGui.Frame_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_14.BackgroundTransparency = 1.000
+ScreenGui.Frame_14.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_14.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_14.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_14.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_14.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_14.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_14.SliceScale = 0.120
+
+ScreenGui.TextLabel_9.Parent = ScreenGui.Frame_14
+ScreenGui.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_9.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_9.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_9.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_9.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_9.Text = "UPGRADES"
+ScreenGui.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_9.TextScaled = true
+ScreenGui.TextLabel_9.TextSize = 14.000
+ScreenGui.TextLabel_9.TextWrapped = true
+
+ScreenGui.UIGradient_35.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_35.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_35.Rotation = 1000
+ScreenGui.UIGradient_35.Parent = ScreenGui.TextLabel_9
+
+ScreenGui.ScrollingFrame_7.Parent = ScreenGui.Frame_14
+ScreenGui.ScrollingFrame_7.Active = true
+ScreenGui.ScrollingFrame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_7.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_7.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_7.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_7.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_7.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_10.Name = "Diffuse"
+ScreenGui.Diffuse_10.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_10.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_10.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_10.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_10.Name = "Text"
+ScreenGui.Text_10.Parent = ScreenGui.Diffuse_10
+ScreenGui.Text_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_10.BackgroundTransparency = 1.000
+ScreenGui.Text_10.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_10.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_10.ZIndex = 2
+ScreenGui.Text_10.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_10.Text = "2K REBIRTHS"
+ScreenGui.Text_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_10.TextScaled = true
+ScreenGui.Text_10.TextSize = 14.000
+ScreenGui.Text_10.TextWrapped = true
+
+ScreenGui.UIGradient_36.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_36.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_36.Rotation = 1000
+ScreenGui.UIGradient_36.Parent = ScreenGui.Text_10
+
+ScreenGui.WhiteBar_9.Name = "WhiteBar"
+ScreenGui.WhiteBar_9.Parent = ScreenGui.Diffuse_10
+ScreenGui.WhiteBar_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_9.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_9.BorderSizePixel = 0
+ScreenGui.WhiteBar_9.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_9.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_9.Name = "Slider"
+ScreenGui.Slider_9.Parent = ScreenGui.Diffuse_10
+ScreenGui.Slider_9.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_9.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_9.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_28.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_28.Parent = ScreenGui.Slider_9
+
+ScreenGui.SliderCircle_9.Name = "SliderCircle"
+ScreenGui.SliderCircle_9.Parent = ScreenGui.Slider_9
+ScreenGui.SliderCircle_9.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_9.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_9.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_29.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_29.Parent = ScreenGui.SliderCircle_9
+
+ScreenGui.Button_9.Name = "Button"
+ScreenGui.Button_9.Parent = ScreenGui.Slider_9
+ScreenGui.Button_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_9.BackgroundTransparency = 1.000
+ScreenGui.Button_9.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_9.ZIndex = 2
+ScreenGui.Button_9.Font = Enum.Font.SourceSans
+ScreenGui.Button_9.Text = " "
+ScreenGui.Button_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_9.TextSize = 14.000
+
+ScreenGui.OnOrOff_9.Name = "OnOrOff"
+ScreenGui.OnOrOff_9.Parent = ScreenGui.Diffuse_10
+ScreenGui.OnOrOff_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_9.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_9.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_9.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_9.ZIndex = 2
+ScreenGui.OnOrOff_9.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_9.Text = "False"
+ScreenGui.OnOrOff_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_9.TextScaled = true
+ScreenGui.OnOrOff_9.TextSize = 14.000
+ScreenGui.OnOrOff_9.TextWrapped = true
+
+ScreenGui.UIGradient_37.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_37.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_37.Rotation = 1000
+ScreenGui.UIGradient_37.Parent = ScreenGui.OnOrOff_9
+
+ScreenGui.UICorner_30.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_30.Parent = ScreenGui.Diffuse_10
+
+ScreenGui.Frame_15.Name = "Frame"
+ScreenGui.Frame_15.Parent = ScreenGui.Diffuse_10
+ScreenGui.Frame_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_15.BackgroundTransparency = 1.000
+ScreenGui.Frame_15.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_15.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_15.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_15.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_15.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_15.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_15.SliceScale = 0.120
+
+ScreenGui.Frame_16.Name = "Frame"
+ScreenGui.Frame_16.Parent = ScreenGui.Frame_15
+ScreenGui.Frame_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_16.BackgroundTransparency = 1.000
+ScreenGui.Frame_16.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_16.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_16.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_16.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_16.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_16.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_16.SliceScale = 0.120
+
+ScreenGui.TextLabel_10.Parent = ScreenGui.Frame_16
+ScreenGui.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_10.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_10.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_10.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_10.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_10.Text = "UPGRADES"
+ScreenGui.TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_10.TextScaled = true
+ScreenGui.TextLabel_10.TextSize = 14.000
+ScreenGui.TextLabel_10.TextWrapped = true
+
+ScreenGui.UIGradient_38.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_38.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_38.Rotation = 1000
+ScreenGui.UIGradient_38.Parent = ScreenGui.TextLabel_10
+
+ScreenGui.ScrollingFrame_8.Parent = ScreenGui.Frame_16
+ScreenGui.ScrollingFrame_8.Active = true
+ScreenGui.ScrollingFrame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_8.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_8.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_8.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_8.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_8.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_11.Name = "Diffuse"
+ScreenGui.Diffuse_11.Parent = ScreenGui.ScrollingFrame
+ScreenGui.Diffuse_11.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_11.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_11.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_11.Name = "Text"
+ScreenGui.Text_11.Parent = ScreenGui.Diffuse_11
+ScreenGui.Text_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_11.BackgroundTransparency = 1.000
+ScreenGui.Text_11.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_11.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_11.ZIndex = 2
+ScreenGui.Text_11.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_11.Text = "10K REBIRTHS"
+ScreenGui.Text_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_11.TextScaled = true
+ScreenGui.Text_11.TextSize = 14.000
+ScreenGui.Text_11.TextWrapped = true
+
+ScreenGui.UIGradient_39.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_39.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_39.Rotation = 1000
+ScreenGui.UIGradient_39.Parent = ScreenGui.Text_11
+
+ScreenGui.WhiteBar_10.Name = "WhiteBar"
+ScreenGui.WhiteBar_10.Parent = ScreenGui.Diffuse_11
+ScreenGui.WhiteBar_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_10.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_10.BorderSizePixel = 0
+ScreenGui.WhiteBar_10.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_10.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_10.Name = "Slider"
+ScreenGui.Slider_10.Parent = ScreenGui.Diffuse_11
+ScreenGui.Slider_10.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_10.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_10.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_31.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_31.Parent = ScreenGui.Slider_10
+
+ScreenGui.SliderCircle_10.Name = "SliderCircle"
+ScreenGui.SliderCircle_10.Parent = ScreenGui.Slider_10
+ScreenGui.SliderCircle_10.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_10.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_10.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_32.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_32.Parent = ScreenGui.SliderCircle_10
+
+ScreenGui.Button_10.Name = "Button"
+ScreenGui.Button_10.Parent = ScreenGui.Slider_10
+ScreenGui.Button_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_10.BackgroundTransparency = 1.000
+ScreenGui.Button_10.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_10.ZIndex = 2
+ScreenGui.Button_10.Font = Enum.Font.SourceSans
+ScreenGui.Button_10.Text = " "
+ScreenGui.Button_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_10.TextSize = 14.000
+
+ScreenGui.OnOrOff_10.Name = "OnOrOff"
+ScreenGui.OnOrOff_10.Parent = ScreenGui.Diffuse_11
+ScreenGui.OnOrOff_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_10.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_10.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_10.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_10.ZIndex = 2
+ScreenGui.OnOrOff_10.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_10.Text = "False"
+ScreenGui.OnOrOff_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_10.TextScaled = true
+ScreenGui.OnOrOff_10.TextSize = 14.000
+ScreenGui.OnOrOff_10.TextWrapped = true
+
+ScreenGui.UIGradient_40.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_40.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_40.Rotation = 1000
+ScreenGui.UIGradient_40.Parent = ScreenGui.OnOrOff_10
+
+ScreenGui.UICorner_33.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_33.Parent = ScreenGui.Diffuse_11
+
+ScreenGui.Frame_17.Name = "Frame"
+ScreenGui.Frame_17.Parent = ScreenGui.Diffuse_11
+ScreenGui.Frame_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_17.BackgroundTransparency = 1.000
+ScreenGui.Frame_17.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_17.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_17.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_17.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_17.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_17.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_17.SliceScale = 0.120
+
+ScreenGui.Frame_18.Name = "Frame"
+ScreenGui.Frame_18.Parent = ScreenGui.Frame_17
+ScreenGui.Frame_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_18.BackgroundTransparency = 1.000
+ScreenGui.Frame_18.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_18.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_18.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_18.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_18.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_18.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_18.SliceScale = 0.120
+
+ScreenGui.TextLabel_11.Parent = ScreenGui.Frame_18
+ScreenGui.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_11.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_11.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_11.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_11.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_11.Text = "UPGRADES"
+ScreenGui.TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_11.TextScaled = true
+ScreenGui.TextLabel_11.TextSize = 14.000
+ScreenGui.TextLabel_11.TextWrapped = true
+
+ScreenGui.UIGradient_41.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_41.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_41.Rotation = 1000
+ScreenGui.UIGradient_41.Parent = ScreenGui.TextLabel_11
+
+ScreenGui.ScrollingFrame_9.Parent = ScreenGui.Frame_18
+ScreenGui.ScrollingFrame_9.Active = true
+ScreenGui.ScrollingFrame_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_9.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_9.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_9.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_9.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_9.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_12.Name = "Diffuse"
+ScreenGui.Diffuse_12.Parent = ScreenGui.Autofarmfr1ame
+ScreenGui.Diffuse_12.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_12.Position = UDim2.new(0.0411399081, 0, 0.361437708, 0)
+ScreenGui.Diffuse_12.Size = UDim2.new(0.923789322, 0, 0.109919563, 0)
+
+ScreenGui.Text_12.Name = "Text"
+ScreenGui.Text_12.Parent = ScreenGui.Diffuse_12
+ScreenGui.Text_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_12.BackgroundTransparency = 1.000
+ScreenGui.Text_12.Position = UDim2.new(0.267072976, 0, 0.128747627, 0)
+ScreenGui.Text_12.Size = UDim2.new(0.410472721, 0, 0.609882116, 0)
+ScreenGui.Text_12.ZIndex = 2
+ScreenGui.Text_12.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_12.Text = "Auto Upgrade"
+ScreenGui.Text_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_12.TextScaled = true
+ScreenGui.Text_12.TextSize = 14.000
+ScreenGui.Text_12.TextWrapped = true
+
+ScreenGui.UIGradient_42.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_42.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_42.Rotation = 1000
+ScreenGui.UIGradient_42.Parent = ScreenGui.Text_12
+
+ScreenGui.UICorner_34.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_34.Parent = ScreenGui.Diffuse_12
+
+ScreenGui.TextButton_4.Parent = ScreenGui.Diffuse_12
+ScreenGui.TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_4.Position = UDim2.new(0.903502166, 0, 0.144638091, 0)
+ScreenGui.TextButton_4.Size = UDim2.new(0, 25, 0, 26)
+ScreenGui.TextButton_4.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_4.Text = ""
+ScreenGui.TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_4.TextScaled = true
+ScreenGui.TextButton_4.TextSize = 14.000
+ScreenGui.TextButton_4.TextWrapped = true
+
+ScreenGui.UICorner_35.CornerRadius = UDim.new(0, 100)
+ScreenGui.UICorner_35.Parent = ScreenGui.TextButton_4
+
+ScreenGui.UIGradient_43.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_43.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_43.Rotation = 1000
+ScreenGui.UIGradient_43.Parent = ScreenGui.TextButton_4
+
+ScreenGui.TextButton_5.Parent = ScreenGui.TextButton_4
+ScreenGui.TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_5.BackgroundTransparency = 1.000
+ScreenGui.TextButton_5.Position = UDim2.new(0, 0, -0.15384616, 0)
+ScreenGui.TextButton_5.Size = UDim2.new(0, 25, 0, 32)
+ScreenGui.TextButton_5.Font = Enum.Font.SourceSansBold
+ScreenGui.TextButton_5.Text = ">"
+ScreenGui.TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextButton_5.TextScaled = true
+ScreenGui.TextButton_5.TextSize = 14.000
+ScreenGui.TextButton_5.TextWrapped = true
+
+ScreenGui.GOGO.Name = "GOGO"
+ScreenGui.GOGO.Parent = ScreenGui.Diffuse_12
+ScreenGui.GOGO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.GOGO.BackgroundTransparency = 1.000
+ScreenGui.GOGO.ClipsDescendants = true
+ScreenGui.GOGO.Position = UDim2.new(1.09954488, 0, -2.98685026, 0)
+ScreenGui.GOGO.Size = UDim2.new(0, 200, 0, 1)
+ScreenGui.GOGO.Visible = false
+ScreenGui.GOGO.Image = "rbxassetid://3570695787"
+ScreenGui.GOGO.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.GOGO.ScaleType = Enum.ScaleType.Slice
+ScreenGui.GOGO.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.GOGO.SliceScale = 0.120
+
+ScreenGui.Frame_19.Name = "Frame"
+ScreenGui.Frame_19.Parent = ScreenGui.GOGO
+ScreenGui.Frame_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_19.BackgroundTransparency = 1.000
+ScreenGui.Frame_19.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_19.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_19.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_19.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_19.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_19.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_19.SliceScale = 0.120
+
+ScreenGui.TextLabel_12.Parent = ScreenGui.Frame_19
+ScreenGui.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_12.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_12.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_12.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_12.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_12.Text = "UPGRADES"
+ScreenGui.TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_12.TextScaled = true
+ScreenGui.TextLabel_12.TextSize = 14.000
+ScreenGui.TextLabel_12.TextWrapped = true
+
+ScreenGui.UIGradient_44.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_44.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_44.Rotation = 1000
+ScreenGui.UIGradient_44.Parent = ScreenGui.TextLabel_12
+
+ScreenGui.ScrollingFrame_10.Parent = ScreenGui.Frame_19
+ScreenGui.ScrollingFrame_10.Active = true
+ScreenGui.ScrollingFrame_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_10.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_10.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_10.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_10.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_10.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_13.Name = "Diffuse"
+ScreenGui.Diffuse_13.Parent = ScreenGui.ScrollingFrame_10
+ScreenGui.Diffuse_13.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_13.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_13.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_13.Name = "Text"
+ScreenGui.Text_13.Parent = ScreenGui.Diffuse_13
+ScreenGui.Text_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_13.BackgroundTransparency = 1.000
+ScreenGui.Text_13.Position = UDim2.new(0, 0, 0.0141759887, 0)
+ScreenGui.Text_13.Size = UDim2.new(0.470248044, 0, 0.985823214, 0)
+ScreenGui.Text_13.ZIndex = 2
+ScreenGui.Text_13.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_13.Text = "Tap Multiplier"
+ScreenGui.Text_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_13.TextScaled = true
+ScreenGui.Text_13.TextSize = 14.000
+ScreenGui.Text_13.TextWrapped = true
+
+ScreenGui.UIGradient_45.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_45.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_45.Rotation = 1000
+ScreenGui.UIGradient_45.Parent = ScreenGui.Text_13
+
+ScreenGui.WhiteBar_11.Name = "WhiteBar"
+ScreenGui.WhiteBar_11.Parent = ScreenGui.Diffuse_13
+ScreenGui.WhiteBar_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_11.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_11.BorderSizePixel = 0
+ScreenGui.WhiteBar_11.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_11.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_11.Name = "Slider"
+ScreenGui.Slider_11.Parent = ScreenGui.Diffuse_13
+ScreenGui.Slider_11.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_11.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_11.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_36.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_36.Parent = ScreenGui.Slider_11
+
+ScreenGui.SliderCircle_11.Name = "SliderCircle"
+ScreenGui.SliderCircle_11.Parent = ScreenGui.Slider_11
+ScreenGui.SliderCircle_11.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_11.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_11.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_37.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_37.Parent = ScreenGui.SliderCircle_11
+
+ScreenGui.Button_11.Name = "Button"
+ScreenGui.Button_11.Parent = ScreenGui.Slider_11
+ScreenGui.Button_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_11.BackgroundTransparency = 1.000
+ScreenGui.Button_11.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_11.ZIndex = 2
+ScreenGui.Button_11.Font = Enum.Font.SourceSans
+ScreenGui.Button_11.Text = " "
+ScreenGui.Button_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_11.TextSize = 14.000
+
+ScreenGui.OnOrOff_11.Name = "OnOrOff"
+ScreenGui.OnOrOff_11.Parent = ScreenGui.Diffuse_13
+ScreenGui.OnOrOff_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_11.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_11.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_11.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_11.ZIndex = 2
+ScreenGui.OnOrOff_11.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_11.Text = "False"
+ScreenGui.OnOrOff_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_11.TextScaled = true
+ScreenGui.OnOrOff_11.TextSize = 14.000
+ScreenGui.OnOrOff_11.TextWrapped = true
+
+ScreenGui.UIGradient_46.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_46.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_46.Rotation = 1000
+ScreenGui.UIGradient_46.Parent = ScreenGui.OnOrOff_11
+
+ScreenGui.UICorner_38.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_38.Parent = ScreenGui.Diffuse_13
+
+ScreenGui.Frame_20.Name = "Frame"
+ScreenGui.Frame_20.Parent = ScreenGui.Diffuse_13
+ScreenGui.Frame_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_20.BackgroundTransparency = 1.000
+ScreenGui.Frame_20.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_20.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_20.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_20.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_20.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_20.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_20.SliceScale = 0.120
+
+ScreenGui.Frame_21.Name = "Frame"
+ScreenGui.Frame_21.Parent = ScreenGui.Frame_20
+ScreenGui.Frame_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_21.BackgroundTransparency = 1.000
+ScreenGui.Frame_21.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_21.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_21.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_21.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_21.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_21.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_21.SliceScale = 0.120
+
+ScreenGui.TextLabel_13.Parent = ScreenGui.Frame_21
+ScreenGui.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_13.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_13.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_13.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_13.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_13.Text = "UPGRADES"
+ScreenGui.TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_13.TextScaled = true
+ScreenGui.TextLabel_13.TextSize = 14.000
+ScreenGui.TextLabel_13.TextWrapped = true
+
+ScreenGui.UIGradient_47.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_47.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_47.Rotation = 1000
+ScreenGui.UIGradient_47.Parent = ScreenGui.TextLabel_13
+
+ScreenGui.ScrollingFrame_11.Parent = ScreenGui.Frame_21
+ScreenGui.ScrollingFrame_11.Active = true
+ScreenGui.ScrollingFrame_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_11.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_11.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_11.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_11.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_11.ScrollBarThickness = 5
+
+ScreenGui.UIListLayout_2.Parent = ScreenGui.ScrollingFrame_10
+ScreenGui.UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ScreenGui.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+ScreenGui.UIListLayout_2.Padding = UDim.new(0, 7)
+
+ScreenGui.Diffuse_14.Name = "Diffuse"
+ScreenGui.Diffuse_14.Parent = ScreenGui.ScrollingFrame_10
+ScreenGui.Diffuse_14.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_14.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_14.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_14.Name = "Text"
+ScreenGui.Text_14.Parent = ScreenGui.Diffuse_14
+ScreenGui.Text_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_14.BackgroundTransparency = 1.000
+ScreenGui.Text_14.Position = UDim2.new(0, 0, 0.0141759887, 0)
+ScreenGui.Text_14.Size = UDim2.new(0.470248044, 0, 0.985823214, 0)
+ScreenGui.Text_14.ZIndex = 2
+ScreenGui.Text_14.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_14.Text = "More Rebirths"
+ScreenGui.Text_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_14.TextScaled = true
+ScreenGui.Text_14.TextSize = 14.000
+ScreenGui.Text_14.TextWrapped = true
+
+ScreenGui.UIGradient_48.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_48.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_48.Rotation = 1000
+ScreenGui.UIGradient_48.Parent = ScreenGui.Text_14
+
+ScreenGui.WhiteBar_12.Name = "WhiteBar"
+ScreenGui.WhiteBar_12.Parent = ScreenGui.Diffuse_14
+ScreenGui.WhiteBar_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_12.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_12.BorderSizePixel = 0
+ScreenGui.WhiteBar_12.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_12.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_12.Name = "Slider"
+ScreenGui.Slider_12.Parent = ScreenGui.Diffuse_14
+ScreenGui.Slider_12.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_12.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_12.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_39.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_39.Parent = ScreenGui.Slider_12
+
+ScreenGui.SliderCircle_12.Name = "SliderCircle"
+ScreenGui.SliderCircle_12.Parent = ScreenGui.Slider_12
+ScreenGui.SliderCircle_12.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_12.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_12.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_40.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_40.Parent = ScreenGui.SliderCircle_12
+
+ScreenGui.Button_12.Name = "Button"
+ScreenGui.Button_12.Parent = ScreenGui.Slider_12
+ScreenGui.Button_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_12.BackgroundTransparency = 1.000
+ScreenGui.Button_12.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_12.ZIndex = 2
+ScreenGui.Button_12.Font = Enum.Font.SourceSans
+ScreenGui.Button_12.Text = " "
+ScreenGui.Button_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_12.TextSize = 14.000
+
+ScreenGui.OnOrOff_12.Name = "OnOrOff"
+ScreenGui.OnOrOff_12.Parent = ScreenGui.Diffuse_14
+ScreenGui.OnOrOff_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_12.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_12.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_12.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_12.ZIndex = 2
+ScreenGui.OnOrOff_12.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_12.Text = "False"
+ScreenGui.OnOrOff_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_12.TextScaled = true
+ScreenGui.OnOrOff_12.TextSize = 14.000
+ScreenGui.OnOrOff_12.TextWrapped = true
+
+ScreenGui.UIGradient_49.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_49.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_49.Rotation = 1000
+ScreenGui.UIGradient_49.Parent = ScreenGui.OnOrOff_12
+
+ScreenGui.UICorner_41.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_41.Parent = ScreenGui.Diffuse_14
+
+ScreenGui.Frame_22.Name = "Frame"
+ScreenGui.Frame_22.Parent = ScreenGui.Diffuse_14
+ScreenGui.Frame_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_22.BackgroundTransparency = 1.000
+ScreenGui.Frame_22.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_22.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_22.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_22.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_22.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_22.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_22.SliceScale = 0.120
+
+ScreenGui.Frame_23.Name = "Frame"
+ScreenGui.Frame_23.Parent = ScreenGui.Frame_22
+ScreenGui.Frame_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_23.BackgroundTransparency = 1.000
+ScreenGui.Frame_23.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_23.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_23.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_23.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_23.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_23.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_23.SliceScale = 0.120
+
+ScreenGui.TextLabel_14.Parent = ScreenGui.Frame_23
+ScreenGui.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_14.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_14.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_14.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_14.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_14.Text = "UPGRADES"
+ScreenGui.TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_14.TextScaled = true
+ScreenGui.TextLabel_14.TextSize = 14.000
+ScreenGui.TextLabel_14.TextWrapped = true
+
+ScreenGui.UIGradient_50.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_50.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_50.Rotation = 1000
+ScreenGui.UIGradient_50.Parent = ScreenGui.TextLabel_14
+
+ScreenGui.ScrollingFrame_12.Parent = ScreenGui.Frame_23
+ScreenGui.ScrollingFrame_12.Active = true
+ScreenGui.ScrollingFrame_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_12.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_12.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_12.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_12.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_12.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_15.Name = "Diffuse"
+ScreenGui.Diffuse_15.Parent = ScreenGui.ScrollingFrame_10
+ScreenGui.Diffuse_15.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_15.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_15.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_15.Name = "Text"
+ScreenGui.Text_15.Parent = ScreenGui.Diffuse_15
+ScreenGui.Text_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_15.BackgroundTransparency = 1.000
+ScreenGui.Text_15.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_15.Size = UDim2.new(0.470248044, 0, 0.683206916, 0)
+ScreenGui.Text_15.ZIndex = 2
+ScreenGui.Text_15.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_15.Text = "Pet Storage"
+ScreenGui.Text_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_15.TextScaled = true
+ScreenGui.Text_15.TextSize = 14.000
+ScreenGui.Text_15.TextWrapped = true
+
+ScreenGui.UIGradient_51.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_51.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_51.Rotation = 1000
+ScreenGui.UIGradient_51.Parent = ScreenGui.Text_15
+
+ScreenGui.WhiteBar_13.Name = "WhiteBar"
+ScreenGui.WhiteBar_13.Parent = ScreenGui.Diffuse_15
+ScreenGui.WhiteBar_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_13.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_13.BorderSizePixel = 0
+ScreenGui.WhiteBar_13.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_13.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_13.Name = "Slider"
+ScreenGui.Slider_13.Parent = ScreenGui.Diffuse_15
+ScreenGui.Slider_13.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_13.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_13.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_42.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_42.Parent = ScreenGui.Slider_13
+
+ScreenGui.SliderCircle_13.Name = "SliderCircle"
+ScreenGui.SliderCircle_13.Parent = ScreenGui.Slider_13
+ScreenGui.SliderCircle_13.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_13.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_13.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_43.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_43.Parent = ScreenGui.SliderCircle_13
+
+ScreenGui.Button_13.Name = "Button"
+ScreenGui.Button_13.Parent = ScreenGui.Slider_13
+ScreenGui.Button_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_13.BackgroundTransparency = 1.000
+ScreenGui.Button_13.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_13.ZIndex = 2
+ScreenGui.Button_13.Font = Enum.Font.SourceSans
+ScreenGui.Button_13.Text = " "
+ScreenGui.Button_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_13.TextSize = 14.000
+
+ScreenGui.OnOrOff_13.Name = "OnOrOff"
+ScreenGui.OnOrOff_13.Parent = ScreenGui.Diffuse_15
+ScreenGui.OnOrOff_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_13.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_13.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_13.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_13.ZIndex = 2
+ScreenGui.OnOrOff_13.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_13.Text = "False"
+ScreenGui.OnOrOff_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_13.TextScaled = true
+ScreenGui.OnOrOff_13.TextSize = 14.000
+ScreenGui.OnOrOff_13.TextWrapped = true
+
+ScreenGui.UIGradient_52.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_52.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_52.Rotation = 1000
+ScreenGui.UIGradient_52.Parent = ScreenGui.OnOrOff_13
+
+ScreenGui.UICorner_44.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_44.Parent = ScreenGui.Diffuse_15
+
+ScreenGui.Frame_24.Name = "Frame"
+ScreenGui.Frame_24.Parent = ScreenGui.Diffuse_15
+ScreenGui.Frame_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_24.BackgroundTransparency = 1.000
+ScreenGui.Frame_24.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_24.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_24.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_24.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_24.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_24.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_24.SliceScale = 0.120
+
+ScreenGui.Frame_25.Name = "Frame"
+ScreenGui.Frame_25.Parent = ScreenGui.Frame_24
+ScreenGui.Frame_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_25.BackgroundTransparency = 1.000
+ScreenGui.Frame_25.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_25.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_25.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_25.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_25.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_25.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_25.SliceScale = 0.120
+
+ScreenGui.TextLabel_15.Parent = ScreenGui.Frame_25
+ScreenGui.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_15.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_15.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_15.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_15.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_15.Text = "UPGRADES"
+ScreenGui.TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_15.TextScaled = true
+ScreenGui.TextLabel_15.TextSize = 14.000
+ScreenGui.TextLabel_15.TextWrapped = true
+
+ScreenGui.UIGradient_53.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_53.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_53.Rotation = 1000
+ScreenGui.UIGradient_53.Parent = ScreenGui.TextLabel_15
+
+ScreenGui.ScrollingFrame_13.Parent = ScreenGui.Frame_25
+ScreenGui.ScrollingFrame_13.Active = true
+ScreenGui.ScrollingFrame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_13.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_13.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_13.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_13.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_13.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_16.Name = "Diffuse"
+ScreenGui.Diffuse_16.Parent = ScreenGui.ScrollingFrame_10
+ScreenGui.Diffuse_16.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_16.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_16.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_16.Name = "Text"
+ScreenGui.Text_16.Parent = ScreenGui.Diffuse_16
+ScreenGui.Text_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_16.BackgroundTransparency = 1.000
+ScreenGui.Text_16.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_16.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_16.ZIndex = 2
+ScreenGui.Text_16.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_16.Text = "Faster Walkspeed"
+ScreenGui.Text_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_16.TextScaled = true
+ScreenGui.Text_16.TextSize = 14.000
+ScreenGui.Text_16.TextWrapped = true
+
+ScreenGui.UIGradient_54.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_54.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_54.Rotation = 1000
+ScreenGui.UIGradient_54.Parent = ScreenGui.Text_16
+
+ScreenGui.WhiteBar_14.Name = "WhiteBar"
+ScreenGui.WhiteBar_14.Parent = ScreenGui.Diffuse_16
+ScreenGui.WhiteBar_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_14.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_14.BorderSizePixel = 0
+ScreenGui.WhiteBar_14.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_14.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_14.Name = "Slider"
+ScreenGui.Slider_14.Parent = ScreenGui.Diffuse_16
+ScreenGui.Slider_14.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_14.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_14.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_45.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_45.Parent = ScreenGui.Slider_14
+
+ScreenGui.SliderCircle_14.Name = "SliderCircle"
+ScreenGui.SliderCircle_14.Parent = ScreenGui.Slider_14
+ScreenGui.SliderCircle_14.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_14.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_14.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_46.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_46.Parent = ScreenGui.SliderCircle_14
+
+ScreenGui.Button_14.Name = "Button"
+ScreenGui.Button_14.Parent = ScreenGui.Slider_14
+ScreenGui.Button_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_14.BackgroundTransparency = 1.000
+ScreenGui.Button_14.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_14.ZIndex = 2
+ScreenGui.Button_14.Font = Enum.Font.SourceSans
+ScreenGui.Button_14.Text = " "
+ScreenGui.Button_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_14.TextSize = 14.000
+
+ScreenGui.OnOrOff_14.Name = "OnOrOff"
+ScreenGui.OnOrOff_14.Parent = ScreenGui.Diffuse_16
+ScreenGui.OnOrOff_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_14.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_14.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_14.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_14.ZIndex = 2
+ScreenGui.OnOrOff_14.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_14.Text = "False"
+ScreenGui.OnOrOff_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_14.TextScaled = true
+ScreenGui.OnOrOff_14.TextSize = 14.000
+ScreenGui.OnOrOff_14.TextWrapped = true
+
+ScreenGui.UIGradient_55.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_55.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_55.Rotation = 1000
+ScreenGui.UIGradient_55.Parent = ScreenGui.OnOrOff_14
+
+ScreenGui.UICorner_47.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_47.Parent = ScreenGui.Diffuse_16
+
+ScreenGui.Frame_26.Name = "Frame"
+ScreenGui.Frame_26.Parent = ScreenGui.Diffuse_16
+ScreenGui.Frame_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_26.BackgroundTransparency = 1.000
+ScreenGui.Frame_26.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_26.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_26.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_26.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_26.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_26.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_26.SliceScale = 0.120
+
+ScreenGui.Frame_27.Name = "Frame"
+ScreenGui.Frame_27.Parent = ScreenGui.Frame_26
+ScreenGui.Frame_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_27.BackgroundTransparency = 1.000
+ScreenGui.Frame_27.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_27.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_27.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_27.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_27.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_27.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_27.SliceScale = 0.120
+
+ScreenGui.TextLabel_16.Parent = ScreenGui.Frame_27
+ScreenGui.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_16.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_16.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_16.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_16.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_16.Text = "UPGRADES"
+ScreenGui.TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_16.TextScaled = true
+ScreenGui.TextLabel_16.TextSize = 14.000
+ScreenGui.TextLabel_16.TextWrapped = true
+
+ScreenGui.UIGradient_56.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_56.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_56.Rotation = 1000
+ScreenGui.UIGradient_56.Parent = ScreenGui.TextLabel_16
+
+ScreenGui.ScrollingFrame_14.Parent = ScreenGui.Frame_27
+ScreenGui.ScrollingFrame_14.Active = true
+ScreenGui.ScrollingFrame_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_14.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_14.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_14.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_14.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_14.ScrollBarThickness = 5
+
+ScreenGui.Diffuse_17.Name = "Diffuse"
+ScreenGui.Diffuse_17.Parent = ScreenGui.ScrollingFrame_10
+ScreenGui.Diffuse_17.BackgroundColor3 = Color3.fromRGB(27, 29, 31)
+ScreenGui.Diffuse_17.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Diffuse_17.Position = UDim2.new(0.035675548, 0, 0.000506073236, 0)
+ScreenGui.Diffuse_17.Size = UDim2.new(0.923789382, 0, 0.0495576188, 0)
+
+ScreenGui.Text_17.Name = "Text"
+ScreenGui.Text_17.Parent = ScreenGui.Diffuse_17
+ScreenGui.Text_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_17.BackgroundTransparency = 1.000
+ScreenGui.Text_17.Position = UDim2.new(0, 0, 0.0891891196, 0)
+ScreenGui.Text_17.Size = UDim2.new(0.470248044, 0, 0.910810173, 0)
+ScreenGui.Text_17.ZIndex = 2
+ScreenGui.Text_17.Font = Enum.Font.SourceSansBold
+ScreenGui.Text_17.Text = "Critical Chances"
+ScreenGui.Text_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Text_17.TextScaled = true
+ScreenGui.Text_17.TextSize = 14.000
+ScreenGui.Text_17.TextWrapped = true
+
+ScreenGui.UIGradient_57.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_57.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_57.Rotation = 1000
+ScreenGui.UIGradient_57.Parent = ScreenGui.Text_17
+
+ScreenGui.WhiteBar_15.Name = "WhiteBar"
+ScreenGui.WhiteBar_15.Parent = ScreenGui.Diffuse_17
+ScreenGui.WhiteBar_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.WhiteBar_15.BorderColor3 = Color3.fromRGB(255, 255, 127)
+ScreenGui.WhiteBar_15.BorderSizePixel = 0
+ScreenGui.WhiteBar_15.Position = UDim2.new(0.472865582, 0, 0.14243333, 0)
+ScreenGui.WhiteBar_15.Size = UDim2.new(0.00544419885, 0, 0.7058056, 0)
+
+ScreenGui.Slider_15.Name = "Slider"
+ScreenGui.Slider_15.Parent = ScreenGui.Diffuse_17
+ScreenGui.Slider_15.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ScreenGui.Slider_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.Slider_15.Position = UDim2.new(0.731114388, 0, 0.144637436, 0)
+ScreenGui.Slider_15.Size = UDim2.new(0.22752285, 0, 0.731003523, 0)
+
+ScreenGui.UICorner_48.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_48.Parent = ScreenGui.Slider_15
+
+ScreenGui.SliderCircle_15.Name = "SliderCircle"
+ScreenGui.SliderCircle_15.Parent = ScreenGui.Slider_15
+ScreenGui.SliderCircle_15.AnchorPoint = Vector2.new(0.5, 0)
+ScreenGui.SliderCircle_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.SliderCircle_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ScreenGui.SliderCircle_15.Position = UDim2.new(0.200000003, 0, 0.122000001, 0)
+ScreenGui.SliderCircle_15.Size = UDim2.new(0.300999999, 0, 0.736791015, 0)
+
+ScreenGui.UICorner_49.CornerRadius = UDim.new(1, 0)
+ScreenGui.UICorner_49.Parent = ScreenGui.SliderCircle_15
+
+ScreenGui.Button_15.Name = "Button"
+ScreenGui.Button_15.Parent = ScreenGui.Slider_15
+ScreenGui.Button_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Button_15.BackgroundTransparency = 1.000
+ScreenGui.Button_15.Size = UDim2.new(1, 0, 1, 0)
+ScreenGui.Button_15.ZIndex = 2
+ScreenGui.Button_15.Font = Enum.Font.SourceSans
+ScreenGui.Button_15.Text = " "
+ScreenGui.Button_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScreenGui.Button_15.TextSize = 14.000
+
+ScreenGui.OnOrOff_15.Name = "OnOrOff"
+ScreenGui.OnOrOff_15.Parent = ScreenGui.Diffuse_17
+ScreenGui.OnOrOff_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_15.BackgroundTransparency = 1.000
+ScreenGui.OnOrOff_15.Position = UDim2.new(0.499824733, 0, 0.195093334, 0)
+ScreenGui.OnOrOff_15.Size = UDim2.new(0.207884833, 0, 0.522736251, 0)
+ScreenGui.OnOrOff_15.ZIndex = 2
+ScreenGui.OnOrOff_15.Font = Enum.Font.SourceSansBold
+ScreenGui.OnOrOff_15.Text = "False"
+ScreenGui.OnOrOff_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.OnOrOff_15.TextScaled = true
+ScreenGui.OnOrOff_15.TextSize = 14.000
+ScreenGui.OnOrOff_15.TextWrapped = true
+
+ScreenGui.UIGradient_58.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_58.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_58.Rotation = 1000
+ScreenGui.UIGradient_58.Parent = ScreenGui.OnOrOff_15
+
+ScreenGui.UICorner_50.CornerRadius = UDim.new(0.200000003, 1000)
+ScreenGui.UICorner_50.Parent = ScreenGui.Diffuse_17
+
+ScreenGui.Frame_28.Name = "Frame"
+ScreenGui.Frame_28.Parent = ScreenGui.Diffuse_17
+ScreenGui.Frame_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_28.BackgroundTransparency = 1.000
+ScreenGui.Frame_28.Position = UDim2.new(1.099545, 0, -2.98685026, 0)
+ScreenGui.Frame_28.Size = UDim2.new(0, 200, 0, 288)
+ScreenGui.Frame_28.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_28.ImageColor3 = Color3.fromRGB(6, 7, 7)
+ScreenGui.Frame_28.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_28.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_28.SliceScale = 0.120
+
+ScreenGui.Frame_29.Name = "Frame"
+ScreenGui.Frame_29.Parent = ScreenGui.Frame_28
+ScreenGui.Frame_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.Frame_29.BackgroundTransparency = 1.000
+ScreenGui.Frame_29.Position = UDim2.new(0.0401416011, 0, 0.0322163403, 0)
+ScreenGui.Frame_29.Size = UDim2.new(0, 183, 0, 269)
+ScreenGui.Frame_29.Image = "rbxassetid://3570695787"
+ScreenGui.Frame_29.ImageColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.Frame_29.ScaleType = Enum.ScaleType.Slice
+ScreenGui.Frame_29.SliceCenter = Rect.new(100, 100, 100, 100)
+ScreenGui.Frame_29.SliceScale = 0.120
+
+ScreenGui.TextLabel_17.Parent = ScreenGui.Frame_29
+ScreenGui.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_17.BackgroundTransparency = 1.000
+ScreenGui.TextLabel_17.Position = UDim2.new(0.125683054, 0, 0.0220057257, 0)
+ScreenGui.TextLabel_17.Size = UDim2.new(0, 137, 0, 29)
+ScreenGui.TextLabel_17.Font = Enum.Font.SourceSansBold
+ScreenGui.TextLabel_17.Text = "UPGRADES"
+ScreenGui.TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.TextLabel_17.TextScaled = true
+ScreenGui.TextLabel_17.TextSize = 14.000
+ScreenGui.TextLabel_17.TextWrapped = true
+
+ScreenGui.UIGradient_59.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+ScreenGui.UIGradient_59.Offset = Vector2.new(0, 0.0500000007)
+ScreenGui.UIGradient_59.Rotation = 1000
+ScreenGui.UIGradient_59.Parent = ScreenGui.TextLabel_17
+
+ScreenGui.ScrollingFrame_15.Parent = ScreenGui.Frame_29
+ScreenGui.ScrollingFrame_15.Active = true
+ScreenGui.ScrollingFrame_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScreenGui.ScrollingFrame_15.BackgroundTransparency = 1.000
+ScreenGui.ScrollingFrame_15.BorderColor3 = Color3.fromRGB(13, 16, 16)
+ScreenGui.ScrollingFrame_15.Position = UDim2.new(0, 0, 0.148698881, 0)
+ScreenGui.ScrollingFrame_15.Size = UDim2.new(0, 183, 0, 229)
+ScreenGui.ScrollingFrame_15.ScrollBarThickness = 5
+
+-- Scripts:
+
+local function XLVCLUI_fake_script() -- ScreenGui.gamename.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.gamename)
+
+	
+end
+coroutine.wrap(XLVCLUI_fake_script)()
+local function ILUQ_fake_script() -- ScreenGui.homebt.. 
+	local script = Instance.new('LocalScript', ScreenGui.homebt)
+
+	--SUP
+	
+	local THEHUB = script.Parent.Parent.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if THEHUB.Home.Visible == false then
+			wait(0.4)
+			--OPENING GUIS
+			THEHUB.Home:TweenSize(UDim2.new(0.207, 0,0.51, 0))
+			THEHUB.Home.Visible = true
+			--CLOSSING GUIS
+			THEHUB.SHOP:TweenSize(UDim2.new(0.207, 0,0, 0))
+			THEHUB.HELP:TweenSize(UDim2.new(0.207, 0,0, 0))
+			THEHUB.Settings:TweenSize(UDim2.new(0.207, 0,0, 0))
+			wait(1) --WAIT TIIME
+			THEHUB.SHOP.Visible = false
+			THEHUB.HELP.Visible = false
+			THEHUB.Settings.Visible = false
+			
+		else
+			wait(0.3)
+			THEHUB.Home:TweenSize(UDim2.new(0.207, 0,0, 0))
+			wait(1)
+			THEHUB.Home.Visible = false
+		end
+	        
+	end)
+end
+coroutine.wrap(ILUQ_fake_script)()
+local function INZUU_fake_script() -- ScreenGui.set.. 
+	local script = Instance.new('LocalScript', ScreenGui.set)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.back:TweenPosition(UDim2.new(0, 0,0.402, 0))
+		script.Parent.Parent.Parent.SettingsFrame:TweenSize(UDim2.new(0, 381,0, 332))
+		script.Parent.Parent.Parent.Autofarmframe:TweenSize(UDim2.new(0, 613,0, 0))
+		script.Parent.Parent.Parent.PLAYERFRAME:TweenSize(UDim2.new(0, 381,0, 0))
+		script.Parent.Parent.Parent.Homeframe:TweenSize(UDim2.new(0, 381,0, 0))
+	end)
+end
+coroutine.wrap(INZUU_fake_script)()
+local function HHAGXVG_fake_script() -- ScreenGui.fam.. 
+	local script = Instance.new('LocalScript', ScreenGui.fam)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.back:TweenPosition(UDim2.new(0, 0,0.171, 0))
+		script.Parent.Parent.Parent.SettingsFrame:TweenSize(UDim2.new(0, 381,0, 0))
+		script.Parent.Parent.Parent.Autofarmframe:TweenSize(UDim2.new(0, 613,0, 334))
+		script.Parent.Parent.Parent.PLAYERFRAME:TweenSize(UDim2.new(0, 381,0, 0))
+		script.Parent.Parent.Parent.Homeframe:TweenSize(UDim2.new(0, 381,0, 0))
+	end)
+end
+coroutine.wrap(HHAGXVG_fake_script)()
+local function OWGY_fake_script() -- ScreenGui.homebt_3.. 
+	local script = Instance.new('LocalScript', ScreenGui.homebt_3)
+
+	--SUP
+	
+	local THEHUB = script.Parent.Parent.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if THEHUB.Home.Visible == false then
+			wait(0.4)
+			--OPENING GUIS
+			THEHUB.Home:TweenSize(UDim2.new(0.207, 0,0.51, 0))
+			THEHUB.Home.Visible = true
+			--CLOSSING GUIS
+			THEHUB.SHOP:TweenSize(UDim2.new(0.207, 0,0, 0))
+			THEHUB.HELP:TweenSize(UDim2.new(0.207, 0,0, 0))
+			THEHUB.Settings:TweenSize(UDim2.new(0.207, 0,0, 0))
+			wait(1) --WAIT TIIME
+			THEHUB.SHOP.Visible = false
+			THEHUB.HELP.Visible = false
+			THEHUB.Settings.Visible = false
+			
+		else
+			wait(0.3)
+			THEHUB.Home:TweenSize(UDim2.new(0.207, 0,0, 0))
+			wait(1)
+			THEHUB.Home.Visible = false
+		end
+	        
+	end)
+end
+coroutine.wrap(OWGY_fake_script)()
+local function GMKOTV_fake_script() -- ScreenGui.pla.. 
+	local script = Instance.new('LocalScript', ScreenGui.pla)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.back:TweenPosition(UDim2.new(0, 0,0.285, 0))
+		script.Parent.Parent.Parent.SettingsFrame:TweenSize(UDim2.new(0, 381,0, 0))
+		script.Parent.Parent.Parent.Autofarmframe:TweenSize(UDim2.new(0, 613,0, 0))
+		script.Parent.Parent.Parent.PLAYERFRAME:TweenSize(UDim2.new(0, 381,0, 332))
+		script.Parent.Parent.Parent.Homeframe:TweenSize(UDim2.new(0, 381,0, 0))
+	end)
+end
+coroutine.wrap(GMKOTV_fake_script)()
+local function KAXOTF_fake_script() -- ScreenGui.home.. 
+	local script = Instance.new('LocalScript', ScreenGui.home)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.back:TweenPosition(UDim2.new(0, 0,0.069, 0))
+		script.Parent.Parent.Parent.SettingsFrame:TweenSize(UDim2.new(0, 381,0, 0))
+		script.Parent.Parent.Parent.Autofarmframe:TweenSize(UDim2.new(0, 613,0, 0))
+		script.Parent.Parent.Parent.PLAYERFRAME:TweenSize(UDim2.new(0, 381,0, 0))
+		script.Parent.Parent.Parent.Homeframe:TweenSize(UDim2.new(0, 381,0, 332))
+	end)
+end
+coroutine.wrap(KAXOTF_fake_script)()
+local function KPAGR_fake_script() -- ScreenGui.MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.MainFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(KPAGR_fake_script)()
+local function EIUULP_fake_script() -- ScreenGui.TextButton.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Text == "?" then
+			
+			script.Parent.Parent.Autofarmframe.Visible = false
+			script.Parent.Parent.SettingsFrame.Visible = false
+			script.Parent.Parent.PLAYERFRAME.Visible = false
+			script.Parent.Parent.Homeframe.Visible = false
+			script.Parent.Parent.Sidebar.Visible =  false
+			script.Parent.Parent.gamename.Visible = false
+			script.Parent.Parent.Parent.MainFrame:TweenSize(UDim2.new(0, 546,0, 31))
+			wait(0.4)
+			script.Parent.Text = "?"
+			wait(0.1)
+		else
+			script.Parent.Parent.Parent.MainFrame:TweenSize(UDim2.new(0, 546,0, 396))
+			wait(0.7)
+			script.Parent.Parent.Autofarmframe.Visible = true
+			script.Parent.Parent.SettingsFrame.Visible = true
+			script.Parent.Parent.Homeframe.Visible = true
+			script.Parent.Parent.PLAYERFRAME.Visible = true
+			
+			script.Parent.Parent.Sidebar.Visible = true
+			script.Parent.Parent.gamename.Visible = true
+			script.Parent.Text = "?"
+			wait(0.1)
+		
+		end
+	end)
+end
+coroutine.wrap(EIUULP_fake_script)()
+local function RKYAHAZ_fake_script() -- ScreenGui.Button.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(RKYAHAZ_fake_script)()
+local function OXCEVUD_fake_script() -- ScreenGui.Button.LOCAL 
+	local script = Instance.new('LocalScript', ScreenGui.Button)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			local plr = game.Players.LocalPlayer
+			local char = plr.Character
+	
+			char.Humanoid.WalkSpeed =36
+		else
+			local plr = game.Players.LocalPlayer
+			local char = plr.Character
+	
+			char.Humanoid.WalkSpeed = 21
+			
+		end
+	end)
+end
+coroutine.wrap(OXCEVUD_fake_script)()
+local function VMCS_fake_script() -- ScreenGui.Button_2.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(VMCS_fake_script)()
+local function WFSN_fake_script() -- ScreenGui.Button_2.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autotap = true;
+			while _G.autotap == true do
+				game:GetService("ReplicatedStorage").Remotes.Tap:FireServer()
+				wait()
+			end
+		else
+			_G.autotap = false;
+			while _G.autotap == true do
+				game:GetService("ReplicatedStorage").Remotes.Tap:FireServer()
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(WFSN_fake_script)()
+local function HEGSP_fake_script() -- ScreenGui.TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.TextButton_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.MAMA.Visible == false then
+			script.Parent.Parent.Parent.MAMA.Visible = true
+			script.Parent.Parent.Parent.MAMA:TweenSize(UDim2.new(0, 200,0, 288))
+		else
+			
+			script.Parent.Parent.Parent.MAMA:TweenSize(UDim2.new(0, 200,0, 1))
+			wait(1)
+			script.Parent.Parent.Parent.MAMA.Visible = false
+			
+			
+		end
+	end)
+end
+coroutine.wrap(HEGSP_fake_script)()
+local function VBQJ_fake_script() -- ScreenGui.Button_3.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(VBQJ_fake_script)()
+local function DVCH_fake_script() -- ScreenGui.Button_3.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB1 = true;
+			while _G.AUTOREB1 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 1
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.AUTOREB1 = false;
+			while _G.AUTOREB1 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 1
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+	            wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(DVCH_fake_script)()
+local function PKVQ_fake_script() -- ScreenGui.Button_4.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_4)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(PKVQ_fake_script)()
+local function XSUIIQ_fake_script() -- ScreenGui.Button_4.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_4)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB2 = true;
+			while _G.AUTOREB2 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 2
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.AUTOREB2 = false;
+			while _G.AUTOREB2 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 2
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+	            wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(XSUIIQ_fake_script)()
+local function LQTIS_fake_script() -- ScreenGui.Button_5.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_5)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(LQTIS_fake_script)()
+local function TKQIEB_fake_script() -- ScreenGui.Button_5.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_5)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB3 = true;
+			while _G.AUTOREB3 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.AUTOREB3 = false;
+			while _G.AUTOREB3 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 3
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+	            wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(TKQIEB_fake_script)()
+local function MPAU_fake_script() -- ScreenGui.Button_6.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_6)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(MPAU_fake_script)()
+local function IJASFNQ_fake_script() -- ScreenGui.Button_6.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_6)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB4 = true;
+			while _G.AUTOREB4 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 4
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+				
+				wait()
+			end
+		else
+			_G.AUTOREB4 = false;
+			while _G.AUTOREB4 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 4
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(IJASFNQ_fake_script)()
+local function YQZMXDD_fake_script() -- ScreenGui.Button_7.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_7)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(YQZMXDD_fake_script)()
+local function ABZF_fake_script() -- ScreenGui.Button_7.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_7)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB5 = true;
+			while _G.AUTOREB5 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 5
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.AUTOREB5 = false;
+			while _G.AUTOREB5 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 5
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(ABZF_fake_script)()
+local function CFBQ_fake_script() -- ScreenGui.Button_8.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_8)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(CFBQ_fake_script)()
+local function CARR_fake_script() -- ScreenGui.Button_8.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_8)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB6 = true;
+			while _G.AUTOREB6 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 6
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.AUTOREB6 = false;
+			while _G.AUTOREB6 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 6
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(CARR_fake_script)()
+local function YFHX_fake_script() -- ScreenGui.Button_9.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_9)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(YFHX_fake_script)()
+local function OKKGF_fake_script() -- ScreenGui.Button_9.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_9)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.AUTOREB7 = true;
+			while _G.AUTOREB7 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 7
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.AUTOREB7 = false;
+			while _G.AUTOREB7 == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = 7
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Rebirth:FireServer(unpack(args))
+	
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(OKKGF_fake_script)()
+local function MTKBB_fake_script() -- ScreenGui.Button_10.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_10)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(MTKBB_fake_script)()
+local function POUN_fake_script() -- ScreenGui.Button_10.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_10)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autocritc = true;
+			while _G.autocritc == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "CriticalChances"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.autocritc = false;
+			while _G.autocritc == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "CriticalChances"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(POUN_fake_script)()
+local function GMHC_fake_script() -- ScreenGui.TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.TextButton_5)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.GOGO.Visible == false then
+			script.Parent.Parent.Parent.GOGO.Visible = true
+			script.Parent.Parent.Parent.GOGO:TweenSize(UDim2.new(0, 200,0, 288))
+		else
+			
+			script.Parent.Parent.Parent.GOGO:TweenSize(UDim2.new(0, 200,0, 1))
+			wait(1)
+			script.Parent.Parent.Parent.GOGO.Visible = false
+			
+			
+		end
+	end)
+end
+coroutine.wrap(GMHC_fake_script)()
+local function YLBOV_fake_script() -- ScreenGui.Button_11.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_11)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(YLBOV_fake_script)()
+local function AMCG_fake_script() -- ScreenGui.Button_11.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_11)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autotapmult = true;
+			while _G.autotapmult == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "TapMultiplier"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.autotapmult = false;
+			while _G.autotapmult == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "TapMultiplier"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+	            wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(AMCG_fake_script)()
+local function TAQSYP_fake_script() -- ScreenGui.Button_12.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_12)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(TAQSYP_fake_script)()
+local function SKVUXQH_fake_script() -- ScreenGui.Button_12.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_12)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autorebirthmult = true;
+			while _G.autorebirthmult == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "RebirthsUpgrade"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.autorebirthmult = false;
+			while _G.autorebirthmult == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "RebirthsUpgrade"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+	
+	            wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(SKVUXQH_fake_script)()
+local function PKOYFE_fake_script() -- ScreenGui.Button_13.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_13)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(PKOYFE_fake_script)()
+local function IIXFOY_fake_script() -- ScreenGui.Button_13.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_13)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autopetstormul = true;
+			while _G.autopetstormul == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "PetStorage"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.autopetstormul = false;
+			while _G.autopetstormul == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "PetStorage"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+	            wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(IIXFOY_fake_script)()
+local function LRZCKEA_fake_script() -- ScreenGui.Button_14.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_14)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(LRZCKEA_fake_script)()
+local function LVNSA_fake_script() -- ScreenGui.Button_14.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_14)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autofasterwalk = true;
+			while _G.autofasterwalk == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "WalkSpeed"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+				wait()
+			end
+		else
+			_G.autofasterwalk = false;
+			while _G.autofasterwalk == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "WalkSpeed"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(LVNSA_fake_script)()
+local function BSBO_fake_script() -- ScreenGui.Button_15.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_15)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "True" then
+			script.Parent.Parent.Parent.OnOrOff.Text = "False"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.2, 0,0.122, 0),"In","Linear",0.05,true)
+			
+		else
+			script.Parent.Parent.Parent.OnOrOff.Text = "True"
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.5, 0,0.122, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.566, 0,0.737, 0),"In","Linear",0.05,true)
+			wait(0.05)
+			script.Parent.Parent.SliderCircle:TweenSize(UDim2.new(0.301, 0,0.737, 0),"In","Linear",0.05,true)
+			script.Parent.Parent.SliderCircle:TweenPosition(UDim2.new(0.8, 0,0.122, 0),"In","Linear",0.05,true)
+		end
+	
+	end)
+	
+	
+	
+	
+	
+end
+coroutine.wrap(BSBO_fake_script)()
+local function BLTDJX_fake_script() -- ScreenGui.Button_15.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui.Button_15)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.OnOrOff.Text == "False" then
+			_G.autocritc = true;
+			while _G.autocritc == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "CriticalChances"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		else
+			_G.autocritc = false;
+			while _G.autocritc == true do
+				-- Script generated by SimpleSpy - credits to exx#9394
+	
+				local args = {
+					[1] = "Ruby",
+					[2] = "CriticalChances"
+				}
+	
+				game:GetService("ReplicatedStorage").Remotes.Upgrade:InvokeServer(unpack(args))
+	
+				wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(BLTDJX_fake_script)()
