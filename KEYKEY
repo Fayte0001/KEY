@@ -315,7 +315,7 @@ local ScreenGui = {
 
 --Properties:
 
-ScreenGui.ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ScreenGui.Parent = game.CoreGui
 
 ScreenGui.Frame.Parent = ScreenGui.ScreenGui
 ScreenGui.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
